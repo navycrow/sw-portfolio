@@ -1,0 +1,57 @@
+:root {
+    --body-bg-color: grey;
+    --body-txt-color: black;
+
+}
+
+
+/* Body */
+body {
+    background-color: var(--body-bg-color);
+    color: var(--body-txt-color);
+    min-height: 100vh;
+
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+
+/* Header */
+header {
+    grid-area: header;
+}
+
+
+/* Nav */
+nav {
+    grid-area: nav;
+}
+
+
+/* Main */
+main {
+    grid-area: main;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Section */
+section {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 1em;
+    flex: 1;
+}
+
+
+/* Footer */
+footer {
+    grid-area: footer;
+}
