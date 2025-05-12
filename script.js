@@ -1,88 +1,86 @@
-class Profile {
-    constructor(path) {
-        this.path = path
-        this.load()
+// Fonctions
+
+/** Charge un profil au format JSON
+ * 
+ * @param {string} path - Chemin du fichier JSON contenant le profil
+ * @returns Données
+ */
+async function loadProfile(path) {
+    try {
+        const response = await fetch(path)
+        // console.log(response)
+        const json = await response.json()
+        // console.log(json)
+        return json
     }
 
-    load() {  // Charge le profil
-        fetch(this.path)
-            // Récupère la réponse, la convertie en JSON
-            .then(response => response.json())
-
-            // Crée les paires clé/valeur dans l'objet
-            .then(data => {
-                const entries = Object.entries(data)
-                entries.forEach(([key, value]) => {
-                    this[key] = value
-                })
-            })
-
-            // Traite l'erreur le cas échéant
-            .catch(err => console.error(err))
-    }
-}
-
-const herve = new Profile('profile.json')
-console.log(herve.presentation)
-
-
-
-
-
-
-
-
-class Formation {
-    constructor(titre, annee) {
-        this.titre = titre
-        this.annee = annee
-    }
-
-    afficher() {
-        const section = document.getElementById('formations')
-        section.innerHTML += `
-            <h2>${this.titre}</h2>
-            <p>${this.annee}</p>
-            `
+    catch (err) {
+        console.error(err)
     }
 }
 
 
-class Experience {
-    constructor(poste, etablissement, fonctions, periode) {
-        this.poste = poste
-        this.etablissement = etablissement
-        this.fonctions = fonctions
-        this.periode = periode
-    }
-
-    afficher() {
-        const section = document.getElementById('experiences')
-        section.innerHTML += `
-            <h2>${this.poste}</h2>
-            <p>${this.etablissement}</p>
-            <p>${this.fonctions.join('\n')}</p>
-            <p>${this.periode}</p>
-            `
-    }
+// ============================================================================
+function ajouterAPropos(prenom, nom, photo, poste, presentation) {
+    const section = document.getElementById('a-propos')
+    section.innerHTML += `
+        <img src="${photo}" alt="photo">
+        <h3>${prenom} ${nom}</h3>
+        <p>${poste}</p>
+        <p>${presentation}</p>
+    `
 }
+
+function ajouterFormation(formation) {
+    const section = document.getElementById('formations')
+    section.innerHTML += `
+        <div class="formation">
+            <h3>${formation.titre}</h3>
+            <p>${formation.annee}</p>
+        </div>
+    `
+}
+
+function ajouterExperience(experience) {
+    const section = document.getElementById('experiences-pro')
+    section.innerHTML += `
+        <div class="experience">
+            <h3>${experience.poste}</h3>
+            <p>${experience.etablissement}</p>
+            <ul>
+                ${experience.fonctions.map(fonction => `<li>${fonction}</li>`).join('')}
+            </ul>
+            <p>${experience.periode}</p>
+        </div>
+    `
+}
+
 
 // ========= MAIN =============================================================
-// Récupère les données du profil dans le fichier.json
-// fetch('profile.json')
-//     .then(response => response.json())  // Attention : Si utilisation d'accolades, return obligatoire
-//     .then(data => {
+async function main() {
+    // Charge le profil
+    const profil = await loadProfile('profile.json')
+    console.log(profil)
 
-//         data.formations.forEach(formation => {
-//             new Formation(formation.titre, formation.annee).afficher()
-//         })
+    // Complète la section A propos
+    const aPropos = profil.aPropos
+    ajouterAPropos(aPropos.prenom, aPropos.nom, aPropos.photo, aPropos.poste, aPropos.presentation)
 
-//         data.experiences.forEach(experience => {
-//             new Experience(experience.poste, experience.etablissement, experience.fonctions, experience.periode).afficher()
-//         });
-//     })
-//     .catch(err => console.error(err))
+    // Complète la section Formations
+    const formations = profil.formations
+    formations.forEach(formation => {
+        ajouterFormation(formation)
+    });
+
+    // Complète la section Expérience
+    const experiences = profil.experiences
+    experiences.forEach(experience => {
+        ajouterExperience(experience)
+    });    
 
 
-// const formations = profile.formations
-// console.log(formations)
+
+}
+
+main()
+
