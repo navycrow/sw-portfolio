@@ -131,16 +131,16 @@
     "langues": [
         {
             "langue": "Français",
-            "niveau": "C2",
+            "niveau": "C2"
         },
         {
             "langue": "Anglais",
-            "niveau": "B2",
+            "niveau": "B2"
         },
         {
             "langue": "Espagnol",
-            "niveau": "A2",
-        },
+            "niveau": "A2"
+        }
     ],
     "competences": [
         "Installation et maintenance de matériels informatiques",
