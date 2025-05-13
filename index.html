@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <button id="dark-mode">Mode sombre</button>
-        <h1>Site Portfolio</h1>
+        
+        <div id="darklight-btn">
+            <img src="assets/img/dark-mode.svg" alt="dark mode" class="icon hidden">
+            <img src="assets/img/light-mode.svg" alt="light mode" class="icon">
+        </div>
+
+        <nav>
+            <ul class="liens">
+                <li><a href="index.html#a-propos">A propos de moi</a></li>
+                <li><a href="index.html#formations">Formations</a></li>
+                <li><a href="index.html#experiences-pro">Expériences professionnelles</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul class="liens">
-            <li><a href="index.html#a-propos">A propos de moi</a></li>
-            <li><a href="index.html#formations">Formations</a></li>
-            <li><a href="index.html#experiences-pro">Expériences professionnelles</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </nav>
 
     <main>
         <section id="a-propos">
@@ -51,7 +55,7 @@
 
 
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

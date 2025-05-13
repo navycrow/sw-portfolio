@@ -9,6 +9,21 @@
 
 }
 
+/* Eléments cachés */
+.hidden {
+    display: none;
+}
+
+/* Icônes */
+.icon {
+    width: 2em;
+    height: 2em;
+}
+
+
+
+
+
 
 /* Body */
 body {
@@ -32,6 +47,7 @@ body {
 header {
     grid-area: header;
 }
+
 
 
 /* Barre de navigation */

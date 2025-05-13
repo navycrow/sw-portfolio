@@ -59,7 +59,7 @@ function ajouterExperience(experience) {
 // ========= MAIN =============================================================
 async function main() {
     // Charge le profil
-    const profil = await loadProfile('profile.json')
+    const profil = await loadProfile('data/profile.json')
     console.log(profil)
 
     // Complète la section A propos
