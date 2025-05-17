@@ -8,6 +8,7 @@
     --section-color: black;
 }
 
+/* Mode sombre */
 :root.dark {
     --body-bg-color: rgb(12, 26, 53);
     --body-txt-color: white;
@@ -17,7 +18,6 @@
 }
 
 
-
 /* Eléments cachés */
 .hidden {
     display: none;
@@ -25,15 +25,9 @@
 
 /* Icônes */
 .icon {
-    width: 2em;
-    height: 2em;
+    width: 32px;
+    height: 32px;
 }
-
-
-
-
-
-
 
 /* Body */
 body {

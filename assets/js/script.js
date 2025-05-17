@@ -1,4 +1,4 @@
-import "./dark-mode.js"
+import "./dark-mode.js"  // Mode sombre
 
 // Fonctions
 
@@ -89,11 +89,4 @@ async function main() {
 
 main()
 
-const darklightBtn = document.getElementById('darklight-btn')
-darklightBtn.addEventListener('click', (e) => {
-    document.getElementById('dark-icon').classList.toggle('hidden')
-    document.getElementById('light-icon').classList.toggle('hidden')
-    document.body.classList.toggle('dark')
-    
-})
 
