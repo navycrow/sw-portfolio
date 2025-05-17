@@ -1,3 +1,5 @@
+import "./dark-mode.js"
+
 // Fonctions
 
 /** Charge un profil au format JSON
@@ -56,6 +58,9 @@ function ajouterExperience(experience) {
 }
 
 
+
+
+
 // ========= MAIN =============================================================
 async function main() {
     // Charge le profil
@@ -83,4 +88,12 @@ async function main() {
 }
 
 main()
+
+const darklightBtn = document.getElementById('darklight-btn')
+darklightBtn.addEventListener('click', (e) => {
+    document.getElementById('dark-icon').classList.toggle('hidden')
+    document.getElementById('light-icon').classList.toggle('hidden')
+    document.body.classList.toggle('dark')
+    
+})
 

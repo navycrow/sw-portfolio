@@ -1,13 +1,22 @@
 :root {
     --font-family: Arial;
 
-    --body-bg-color: rgb(48, 62, 88);
-    --body-txt-color: white;
+    --body-bg-color: white;
+    --body-txt-color: black;
 
     --section-bg-color: rgb(187, 181, 181);
     --section-color: black;
-
 }
+
+:root.dark {
+    --body-bg-color: rgb(12, 26, 53);
+    --body-txt-color: white;
+
+    --section-bg-color: rgb(95, 124, 163);
+    --section-color: white;
+}
+
+
 
 /* Eléments cachés */
 .hidden {
@@ -19,6 +28,7 @@
     width: 2em;
     height: 2em;
 }
+
 
 
 
