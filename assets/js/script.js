@@ -1,74 +1,17 @@
 import "./dark-mode.js"  // Mode sombre
+import {loadProfile, ajouterProfil, ajouterAPropos, ajouterFormation, ajouterExperience} from './profile.js'  // Profil
 
 // Fonctions
-
-/** Charge un profil au format JSON
- * 
- * @param {string} path - Chemin du fichier JSON contenant le profil
- * @returns Données
- */
-async function loadProfile(path) {
-    try {
-        const response = await fetch(path)
-        // console.log(response)
-        const json = await response.json()
-        // console.log(json)
-        return json
-    }
-
-    catch (err) {
-        console.error(err)
-    }
-}
-
-
-// ============================================================================
-function ajouterAPropos(prenom, nom, photo, poste, presentation) {
-    const section = document.getElementById('a-propos')
-    section.innerHTML += `
-        <img src="${photo}" alt="photo">
-        <h3>${prenom} ${nom}</h3>
-        <p>${poste}</p>
-        <p>${presentation}</p>
-    `
-}
-
-function ajouterFormation(formation) {
-    const section = document.getElementById('formations')
-    section.innerHTML += `
-        <div class="formation">
-            <h3>${formation.titre}</h3>
-            <p>${formation.annee}</p>
-        </div>
-    `
-}
-
-function ajouterExperience(experience) {
-    const section = document.getElementById('experiences-pro')
-    section.innerHTML += `
-        <div class="experience">
-            <h3>${experience.poste}</h3>
-            <p>${experience.etablissement}</p>
-            <ul>
-                ${experience.fonctions.map(fonction => `<li>${fonction}</li>`).join('')}
-            </ul>
-            <p>${experience.periode}</p>
-        </div>
-    `
-}
-
-
-
-
 
 // ========= MAIN =============================================================
 async function main() {
     // Charge le profil
     const profil = await loadProfile('data/profile.json')
-    console.log(profil)
+    console.log('profil', profil)
 
-    // Complète la section A propos
+    // Complète le profil du header et la section A propos
     const aPropos = profil.aPropos
+    ajouterProfil(aPropos)
     ajouterAPropos(aPropos.prenom, aPropos.nom, aPropos.photo, aPropos.poste, aPropos.presentation)
 
     // Complète la section Formations
