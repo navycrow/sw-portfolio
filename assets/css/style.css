@@ -2,19 +2,23 @@
     --font-family: Arial;
 
     --body-bg-color: white;
-    --body-txt-color: black;
+    --body-txt-color: #454545;
 
-    --section-bg-color: rgb(187, 181, 181);
-    --section-color: black;
+    --header-height: 4em;  /* utilisé pour la dimension de la photo de profil et le positionnement du menu déroulant */
+
+    --section-bg-color: #f4f4f4;
+    --section-color: #3d3d3d;
+
+    --title-color: #54585b;
 }
 
 /* Mode sombre */
 :root.dark {
-    --body-bg-color: rgb(12, 26, 53);
-    --body-txt-color: white;
+    --body-bg-color: #534b52;
+    --body-txt-color: #f1f0ea; 
 
-    --section-bg-color: rgb(95, 124, 163);
-    --section-color: white;
+    --section-bg-color: #2d232e;
+    --section-color: #e0ddcf;
 }
 
 
@@ -31,14 +35,17 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: inherit;  /* hérite de la couleur du parent */
+    color: inherit;
+    /* hérite de la couleur du parent */
 
 }
 
 #burger-menu {
-    font-size:  42px; /* ajustement manuel */
+    font-size: 42px;
+    /* ajustement manuel */
     position: relative;
-    top: -1px;  /* ajustement manuel */
+    top: -1px;
+    /* ajustement manuel */
 }
 
 /* Body */
@@ -48,7 +55,7 @@ body {
     font-family: var(--font-family);
 
     margin: auto;
-    padding: 0;
+    padding: 1em;
 
     min-height: 100vh;
 
@@ -65,21 +72,36 @@ body {
 /* Header */
 header {
     grid-area: header;
+    width: 100%;
 
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-areas: 
-    "photo titre buttons"
-    "navbar navbar navbar";
+    grid-template-areas:
+        "photo titre buttons";
 }
 
 #photo {
     grid-area: photo;
-    width: 5em;
+    height: var(--header-height);
 }
 
 #titre {
     grid-area: titre;
+    padding-left: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#titre h3,
+#titre p {
+    margin: 0;
+    padding: 0;
+}
+
+#titre p {
+    font-size: 0.8em;
 }
 
 #buttons {
@@ -87,22 +109,28 @@ header {
 }
 
 /* Barre de navigation */
-header nav {
-    grid-area: navbar;
+#menu {
+    /* grid-area: menu; */
+    position: absolute;
+    background-color: var(--body-bg-color);
+    top: calc(var(--header-height) + 1em);
+    right: 0;
 }
 
-.liens {
+#menu ul {
+    margin: auto;
+    padding: 1em;
+
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1em;
 }
 
-.liens li {
+#menu li {
     list-style: none;
 }
 
-.liens a {
+#menu a {
     text-decoration: none;
     color: var(--body-txt-color)
 }
@@ -122,14 +150,70 @@ section {
     color: var(--section-color);
 
     border: 1px solid;
+    box-shadow: 5px 5px 5px;
     border-radius: 1em;
 
     margin: 1em;
     padding: 1em;
 }
 
+section h2 {
+    color: var(--title-color)
+}
+
+
+
 
 /* Footer */
 footer {
     grid-area: footer;
+}
+
+@media screen and (min-width: 574px) {
+
+    /* Header */
+    header {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "photo titre buttons"
+            "menu menu menu";
+    }
+
+    /* Barre de navigation */
+    #menu {
+        grid-area: menu;
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    #menu ul {
+        margin: auto;
+        padding: 1em;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #menu li {
+        list-style: none;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: var(--body-txt-color)
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* Header */
+    header {
+        grid-template-columns: auto auto 1fr auto;
+        grid-template-areas:
+            "photo titre menu buttons";
+    }
 }

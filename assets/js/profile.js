@@ -28,7 +28,7 @@ export function ajouterPhotoTitre(aPropos) {
 
     const titre = document.getElementById('titre')
     titre.innerHTML = `
-        <h4>${aPropos.prenom} ${aPropos.nom}</h4>
+        <h3>${aPropos.prenom} ${aPropos.nom}</h3>
         <p>${aPropos.poste}</p>  
     `
 }
@@ -42,7 +42,7 @@ export function ajouterAPropos(aPropos) {
     section.innerHTML += `
         <img src="${aPropos.photo}" alt="${aPropos.prenom} ${aPropos.nom}" style="border-radius: 50%; width: 50%"/>
         <h3>${aPropos.prenom} ${aPropos.nom}</h3>
-        <p>${aPropos.poste}</p>
+        <h4>${aPropos.poste}</h4>
         <p>${aPropos.presentation}</p>
     `
 }
