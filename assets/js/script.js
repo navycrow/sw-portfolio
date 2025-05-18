@@ -1,5 +1,5 @@
 import "./dark-mode.js"  // Mode sombre
-import {loadProfile, ajouterProfil, ajouterAPropos, ajouterFormation, ajouterExperience} from './profile.js'  // Profil
+import {loadProfile, ajouterPhotoTitre, ajouterAPropos, ajouterFormation, ajouterExperience} from './profile.js'  // Profil
 
 // Fonctions
 
@@ -11,8 +11,8 @@ async function main() {
 
     // Complète le profil du header et la section A propos
     const aPropos = profil.aPropos
-    ajouterProfil(aPropos)
-    ajouterAPropos(aPropos.prenom, aPropos.nom, aPropos.photo, aPropos.poste, aPropos.presentation)
+    ajouterPhotoTitre(aPropos)
+    ajouterAPropos(aPropos)
 
     // Complète la section Formations
     const formations = profil.formations

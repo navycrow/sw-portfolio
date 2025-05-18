@@ -27,6 +27,18 @@
 .icon {
     width: 32px;
     height: 32px;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;  /* hérite de la couleur du parent */
+
+}
+
+#burger-menu {
+    font-size:  42px; /* ajustement manuel */
+    position: relative;
+    top: -1px;  /* ajustement manuel */
 }
 
 /* Body */
@@ -34,6 +46,9 @@ body {
     background-color: var(--body-bg-color);
     color: var(--body-txt-color);
     font-family: var(--font-family);
+
+    margin: auto;
+    padding: 0;
 
     min-height: 100vh;
 
@@ -50,15 +65,30 @@ body {
 /* Header */
 header {
     grid-area: header;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+    "photo titre buttons"
+    "navbar navbar navbar";
 }
 
+#photo {
+    grid-area: photo;
+    width: 5em;
+}
 
+#titre {
+    grid-area: titre;
+}
 
-
+#buttons {
+    grid-area: buttons;
+}
 
 /* Barre de navigation */
-nav {
-    grid-area: nav;
+header nav {
+    grid-area: navbar;
 }
 
 .liens {
