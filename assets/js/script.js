@@ -1,4 +1,5 @@
 import "./dark-mode.js"  // Mode sombre
+import "./burger-menu.js"  // Menu burger
 import {loadProfile, ajouterPhotoTitre, ajouterAPropos, ajouterFormation, ajouterExperience} from './profile.js'  // Profil
 
 // Fonctions

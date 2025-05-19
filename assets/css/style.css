@@ -110,7 +110,7 @@ header {
 
 /* Barre de navigation */
 #menu {
-    /* grid-area: menu; */
+    display: none;
     position: absolute;
     background-color: var(--body-bg-color);
     top: calc(var(--header-height) + 1em);
@@ -179,9 +179,14 @@ footer {
             "menu menu menu";
     }
 
+    #burger-menu {
+        display: none;
+    }
+
     /* Barre de navigation */
     #menu {
         grid-area: menu;
+        display: block;
         position: relative;
         top: auto;
         right: auto;
