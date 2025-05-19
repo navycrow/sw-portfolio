@@ -1,24 +1,31 @@
 :root {
     --font-family: Arial;
 
-    --body-bg-color: white;
-    --body-txt-color: #454545;
+    --body-bg: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 47, 148, 0.2)),
+        url('/assets/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
+    --body-txt-color: #323232;
 
-    --header-height: 4em;  /* utilisé pour la dimension de la photo de profil et le positionnement du menu déroulant */
+    --header-height: 4em;
+    /* utilisé pour la dimension de la photo de profil et le positionnement du menu déroulant */
 
-    --section-bg-color: #f4f4f4;
-    --section-color: #3d3d3d;
+    --section-bg-color: rgba(255, 255, 255, 0.5);
+    --section-color: black;
+    --section-shadow-color: rgba(0, 0, 0, 0.5);
 
     --title-color: #54585b;
 }
 
 /* Mode sombre */
 :root.dark {
-    --body-bg-color: #534b52;
-    --body-txt-color: #f1f0ea; 
+    --body-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 47, 148, 0.7)),
+        url('/assets/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
+    --body-txt-color: white;
 
-    --section-bg-color: #2d232e;
-    --section-color: #e0ddcf;
+    --section-bg-color: rgba(0, 0, 0, 0.5);
+    --section-color: white;
+    --section-shadow-color: rgba(255, 255, 255, 0.5);
+
+    --title-color: white;
 }
 
 
@@ -50,7 +57,9 @@
 
 /* Body */
 body {
-    background-color: var(--body-bg-color);
+    background: var(--body-bg);
+    background-size: cover;
+
     color: var(--body-txt-color);
     font-family: var(--font-family);
 
@@ -112,7 +121,7 @@ header {
 #menu {
     display: none;
     position: absolute;
-    background-color: var(--body-bg-color);
+    background-color: var(--section-bg-color);
     top: calc(var(--header-height) + 1em);
     right: 0;
 }
@@ -149,9 +158,8 @@ section {
     background-color: var(--section-bg-color);
     color: var(--section-color);
 
-    border: 1px solid;
-    box-shadow: 5px 5px 5px;
-    border-radius: 1em;
+    box-shadow: 15px 15px 15px var(--section-shadow-color);
+    border-radius: 0.5em;
 
     margin: 1em;
     padding: 1em;

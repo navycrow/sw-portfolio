@@ -44,6 +44,15 @@ export function ajouterAPropos(aPropos) {
         <h3>${aPropos.prenom} ${aPropos.nom}</h3>
         <h4>${aPropos.poste}</h4>
         <p>${aPropos.presentation}</p>
+        <p>Suivez-moi</p>
+        <div class="social-networks"> 
+            <a href="${aPropos.linkedin}">
+                <img src="assets/img/linkedin/linkedin-black.png" width="25" />
+            </a>
+            <a href="${aPropos.github}">
+                <img src="assets/img/github/github-mark-black.png" width="25" />
+            </a>        
+        </div>
     `
 }
 
