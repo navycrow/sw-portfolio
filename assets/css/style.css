@@ -1,18 +1,19 @@
 :root {
     --font-family: Arial;
+    --header-height: 4em;
+    /* utilisé pour la dimension de la photo de profil et le positionnement du menu déroulant */
 
     --body-bg: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 47, 148, 0.2)),
         url('/assets/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
     --body-txt-color: #323232;
 
-    --header-height: 4em;
-    /* utilisé pour la dimension de la photo de profil et le positionnement du menu déroulant */
+    --menu-bg-color: rgba(208, 218, 224, 1);
 
     --section-bg-color: rgba(255, 255, 255, 0.5);
     --section-color: black;
     --section-shadow-color: rgba(0, 0, 0, 0.5);
 
-    --title-color: #54585b;
+    /* --title-color: #54585b; */
 }
 
 /* Mode sombre */
@@ -21,11 +22,13 @@
         url('/assets/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
     --body-txt-color: white;
 
+    --menu-bg-color: #282e31;
+
     --section-bg-color: rgba(0, 0, 0, 0.5);
     --section-color: white;
     --section-shadow-color: rgba(255, 255, 255, 0.5);
 
-    --title-color: white;
+    /* --title-color: white; */
 }
 
 
@@ -121,7 +124,8 @@ header {
 #menu {
     display: none;
     position: absolute;
-    background-color: var(--section-bg-color);
+    background-color: var(--menu-bg-color);
+    box-shadow: 15px 15px 15px var(--section-shadow-color);
     top: calc(var(--header-height) + 1em);
     right: 0;
 }
@@ -170,8 +174,6 @@ section h2 {
 }
 
 
-
-
 /* Footer */
 footer {
     grid-area: footer;
@@ -198,6 +200,9 @@ footer {
         position: relative;
         top: auto;
         right: auto;
+
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
     }
 
     #menu ul {
