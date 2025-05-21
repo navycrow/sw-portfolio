@@ -2,23 +2,12 @@
  * 
  */
 
+import loadJson from "./json.js"
 
-/** Charge un profil au format JSON
- * 
- * @param {string} path - Chemin du fichier JSON contenant le profil
- * @returns Données
- */
-export async function loadProfile(path) {
-    try {
-        const response = await fetch(path)
-        const json = await response.json()
-        return json
-    }
+// Charge le profil
+export const profil = await loadJson('data/profile.json')
+console.log('profil', profil)
 
-    catch (err) {
-        console.error(err)
-    }
-}
 
 export function ajouterPhotoTitre(aPropos) {
     const photo = document.getElementById('photo')
@@ -81,4 +70,5 @@ export function ajouterExperience(experience) {
         </div>
     `
 }
+
 
