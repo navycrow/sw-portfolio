@@ -17,7 +17,7 @@ const About = () => {
             <img
                 src={about.photo}
                 alt={`${about.prenom} ${about.nom}`}
-                className="rounded-full"
+                className="rounded-full photo-profil"
             />
             <h3>
                 {about.prenom} {about.nom}
