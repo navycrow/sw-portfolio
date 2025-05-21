@@ -1,0 +1,90 @@
+[
+    {
+        "poste": "Conseiller immobilier",
+        "etablissement": "EI Hervé GONZALEZ",
+        "fonctions": [
+            "Création de petites annonces pour mise à la vente de biens, promotion multicanale.",
+            "Signature de mandats de vente et négociation d'acquisitions.",
+            "Gestion du suivi administratif des biens, depuis la signature du mandat à la signature finale.",
+            "Expertise de biens immobiliers, évaluation de la valeur des biens.",
+            "Organisation et réalisation de visites de biens immobiliers par de potentiels acquéreurs.",
+            "Prospection de biens immobiliers afin de constituer un stock de biens types maisons et appartements.",
+            "Estimation des biens immobiliers selon leurs caractéristiques (superficie, travaux à prévoir, secteur géographique…) et les prix du marché."
+        ],
+        "periode": "Sept. 2024 / Janv. 2025"
+    },
+    {
+        "poste": "Administrateur systèmes et réseaux",
+        "etablissement": "DARRIEUMERLOU",
+        "fonctions": [
+            "Installation de nouveaux matériels et équipements informatiques (logiciels, antivirus, imprimantes, ordinateurs …), réalisation des mises à jour.",
+            "Diagnostic et résolution des incidents sur logiciels, matériels, systèmes, téléphonie et réseaux.",
+            "Installation des ordinateurs et configuration des postes de travail",
+            "Gestion du parc informatique (15 postes, 6 imprimantes, 1 serveur, 3 commandes numériques), de la téléphonie fixe et mobile.",
+            "Renseignement des utilisateurs sur les bonnes pratiques en matière de sécurité informatique.",
+            "Commande, réception et installation du matériel : PC, tablettes, smartphones, téléphones."
+        ],
+        "periode": "Sept. 1997 / Août. 2024"
+    },
+    {
+        "poste": "Développeur",
+        "etablissement": "DARRIEUMERLOU",
+        "fonctions": [
+            "Conception et programmation d'applications et de solutions logicielles répondant à des problématiques de l'entreprise",
+            "Exploitation de base de données, extraction, analyse",
+            "Outils utilisés : Access/Excel + VBA, Python",
+            "Connaissances : Powershell, Javascript, AutoIt"
+        ],
+        "periode": "Sept. 1997 / Août. 2024"
+    },
+    {
+        "poste": "Dessinateur / projeteur",
+        "etablissement": "DARRIEUMERLOU",
+        "fonctions": [
+            "Transformation des relevés réalisés en dessins numériques en 3D à l'aide des logiciels SKETCHUP et CADWORK en vue de le présenter au client.",
+            "Elaboration de plans et de listes de débit et d'usinage. Export vers commande numérique",
+            "Elaboration de plans pour déclaration de travaux"
+        ],
+        "periode": "2008 / Août. 2024"
+    },
+    {
+        "poste": "Chargé d'affaires / Métreur",
+        "etablissement": "DARRIEUMERLOU",
+        "fonctions": [
+            "Relevés de mesures sur site",
+            "Établissement d'une proposition commerciale en adaptant l'offre aux besoins du client, chiffrage du coût.",
+            "Utilisation de Sage Batigest",
+            "Réponse aux appels d'offres : analyse du dossier, préparation des pièces justificatives demandées."
+        ],
+        "periode": "Sept. 1997 / 2008"
+    },
+    {
+        "poste": "Assistant administratif polyvalent",
+        "etablissement": "DARRIEUMERLOU",
+        "fonctions": [
+            "Gestion du matériel de bureau (cartouches d'encre, papiers, stylos, feutres, etc.), notamment des stocks et des approvisionnements, en anticipant les besoins afin que les collaborateurs disposent en permanence du matériel nécessaire.",
+            "Réponse aux appels téléphoniques de l'entreprise, en filtrant les demandes, en prenant des messages et en transférant les appels vers l'interlocuteur concerné le cas échéant.",
+            "Commande de matériel de chantier et quincaillerie",
+            "Rédaction de devis",
+            "Soutien administratif"
+        ],
+        "periode": "Sept. 1997 / 2007"
+    },
+    {
+        "poste": "Ouvrier BTP (stage)",
+        "etablissement": "RENE LAPORTE",
+        "fonctions": [
+            "Construction d'un bassin de rétention enterré",
+            "Travaux de maçonnerie dans une station d'épuration"
+        ],
+        "periode": "Mai. 1995 / Juil. 1995"
+    },
+    {
+        "poste": "Manœuvre bâtiment",
+        "etablissement": "SOPREMA",
+        "fonctions": [
+            "Remplacement d'étanchéité sur toitures terrasses d'immeubles"
+        ],
+        "periode": "Juil. 1993 / Août. 1993"
+    }
+]

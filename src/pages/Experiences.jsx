@@ -1,9 +1,32 @@
-import React from 'react'
+import { useState, useEffect } from "react";
 
 const Experiences = () => {
-  return (
-    <div>Experiences</div>
-  )
-}
+    const [experiences, setExperiences] = useState([]);
 
-export default Experiences
+    useEffect(() => {
+        fetch("src/data/experiences.json")
+            .then((response) => response.json())
+            .then((data) => setExperiences(data))
+            .catch((err) => console.error("Erreur de chargement JSON :", err));
+    }, []);
+
+    return (
+        <section id="experiences">
+            <h2>Expériences professionnelles</h2>
+            {experiences.map((experience, index) => (
+                <div key={index} className="experience">
+                    <h3>{experience.poste}</h3>
+                    <p>{experience.etablissement}</p>
+                    <ul>
+                        {experience.fonctions.map((fonction, i) => (
+                            <li key={i}>{fonction}</li>
+                        ))}
+                    </ul>
+                    <p>{experience.periode}</p>
+                </div>
+            ))}
+        </section>
+    );
+};
+
+export default Experiences;

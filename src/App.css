@@ -13,7 +13,6 @@
   --section-color: black;
   --section-shadow-color: rgba(0, 0, 0, 0.5);
 
-  /* --title-color: #54585b; */
 }
 
 /* Mode sombre */
@@ -28,7 +27,6 @@
   --section-color: white;
   --section-shadow-color: rgba(255, 255, 255, 0.5);
 
-  /* --title-color: white; */
 }
 
 
