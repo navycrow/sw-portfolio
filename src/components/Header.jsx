@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DarkModeBtn from "./DarkModeBtn";
+import BurgerBtn from "./BurgerBtn";
 
 function Header() {
     const [about, setAbout] = useState({});
@@ -28,9 +29,7 @@ function Header() {
             {/* <!-- Bouton mode sombre et menu burger --> */}
             <div id="buttons">
                 <DarkModeBtn/>
-                <button id="burger-menu" className="icon">
-                    ☰
-                </button>
+                <BurgerBtn/>
             </div>
 
             {/* <!-- Navbar --> */}

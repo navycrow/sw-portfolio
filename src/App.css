@@ -36,10 +36,17 @@
 }
 
 /* Icônes */
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon {
   width: 32px;
   height: 32px;
-  /* line-height: 32px; */
+  line-height: 32px;
+  /* permet d'aligner verticalement lorsque height=lineHeight */
   font-size: 32px;
   text-align: center;
   background: none;
