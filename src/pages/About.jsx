@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import './About.css'
 
-const About = () => {
+function About() {
     const [about, setAbout] = useState({});
 
     useEffect(() => {
@@ -14,35 +15,36 @@ const About = () => {
     return (
         <section id="a-propos">
             <h2>A propos de moi</h2>
-            <img
-                src={about.photo}
-                alt={`${about.prenom} ${about.nom}`}
-                className="rounded-full photo-profil"
-            />
-            <h3>
-                {about.prenom} {about.nom}
-            </h3>
-            <h4>{about.poste}</h4>
-            <p>{about.presentation}</p>
-            <p>Suivez-moi</p>
-            <div className="social-networks">
-                <Link to={about.linkedin}>
-                    <img
-                        src="src/assets/img/linkedin/linkedin-black.png"
-                        width="25"
-                        alt="linkedIn"
-                    />
-                </Link>
-                <Link to={about.github}>
-                    <img
-                        src="src/assets/img/github/github-mark-black.png"
-                        width="25"
-                        alt="Github"
-                    />
-                </Link>
+            <div>
+                <img
+                    src={about.photo}
+                    alt={`${about.prenom} ${about.nom}`}
+                    className="rounded-full photo-profil" />
+                <h3>
+                    {about.prenom} {about.nom}
+                </h3>
+                <h4>{about.poste}</h4>
+            </div>
+            <div>
+                <p>{about.presentation}</p>
+                <p>Suivez-moi</p>
+                <div className="social-networks">
+                    <Link to={about.linkedin}>
+                        <img
+                            src="src/assets/img/linkedin/linkedin-black.png"
+                            width="25"
+                            alt="linkedIn" />
+                    </Link>
+                    <Link to={about.github}>
+                        <img
+                            src="src/assets/img/github/github-mark-black.png"
+                            width="25"
+                            alt="Github" />
+                    </Link>
+                </div>
             </div>
         </section>
     );
-};
+}
 
 export default About;

@@ -1,0 +1,27 @@
+#a-propos {
+    display: grid;
+    grid-template-areas: 
+    "titre"
+    "photo"
+    "descriptif";
+}
+
+#a-propos h2 {
+    grid-area: titre;
+}
+
+#a-propos div:first-of-type {
+    grid-area: photo;
+}
+
+#a-propos div:last-of-type {
+    grid-area: descriptif;
+}
+
+@media screen and (min-width: 820px) {
+  #a-propos {
+    grid-template-areas:
+      "titre titre"
+      "photo descriptif";
+  }
+}
