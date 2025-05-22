@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import DarkModeBtn from "./DarkModeBtn";
 
-const Header = () => {
+function Header() {
     const [about, setAbout] = useState({});
 
     useEffect(() => {
@@ -17,8 +18,7 @@ const Header = () => {
                 id="photo"
                 src={about.photo}
                 alt={`${about.prenom} ${about.nom}`}
-                className="rounded-full"
-            />
+                className="rounded-full" />
 
             <div id="titre">
                 <h3>{`${about.prenom} ${about.nom}`}</h3>
@@ -27,11 +27,7 @@ const Header = () => {
 
             {/* <!-- Bouton mode sombre et menu burger --> */}
             <div id="buttons">
-                <button
-                    id="dark-mode-btn"
-                    className="icon"
-                    aria-label="Activer le mode sombre"
-                ></button>
+                <DarkModeBtn/>
                 <button id="burger-menu" className="icon">
                     ☰
                 </button>
@@ -64,6 +60,6 @@ const Header = () => {
             </nav>
         </header>
     );
-};
+}
 
 export default Header;
