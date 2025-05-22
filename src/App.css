@@ -57,7 +57,7 @@
 
 }
 
-/* Images */
+/* Photo ronde */
 .rounded-full {
   border-radius: 50%;
 }
@@ -134,7 +134,7 @@ header {
 
 /* Barre de navigation */
 #menu {
-  display: none;
+  /* display: none; */
   position: absolute;
   background-color: var(--menu-bg-color);
   box-shadow: 15px 15px 15px var(--section-shadow-color);
@@ -213,7 +213,7 @@ footer {
   /* Barre de navigation */
   #menu {
     grid-area: menu;
-    display: block;
+    /* display: block; */
     position: relative;
     top: auto;
     right: auto;
