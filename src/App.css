@@ -62,7 +62,7 @@
   border-radius: 50%;
 }
 
-#burger-menu {
+#burger-btn {
   font-size: 42px;
   /* ajustement manuel */
   position: relative;
@@ -206,7 +206,7 @@ footer {
       "menu menu menu";
   }
 
-  #burger-menu {
+  #burger-btn {
     display: none;
   }
 
