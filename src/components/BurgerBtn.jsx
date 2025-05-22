@@ -7,15 +7,27 @@ const BurgerBtn = () => {
     // Définit l'état du menu, caché par défaut
     const [isMenuHidden, setMenuHidden] = useState(true);
 
-    // Si redimensionnement de l'affichage, actualise l'état du bouton
+    
+    // Au montage et en cas de redimensionnement de l'affichage, actualise l'état du bouton
     useEffect(() => {
-        const btn = document.getElementById("burger-btn");
+        // Lors du redimensionnement, vérifie si le bouton burger est présent et actualise l'état
+        function handleResize() {
+            const btn = document.getElementById("burger-btn");
+            const visible = btn.checkVisibility();
+            setBtnVisible(visible);
+            console.log("Bouton burger visible :", visible);
+        }
 
-        window.addEventListener("resize", () => {
-            setBtnVisible(btn.checkVisibility());
-            console.log("Bouton burger visible :", isBtnVisible);
-        });
-    });
+        // Actualise l'état initial du bouton
+        handleResize()
+
+        // Ajout de l'écouteur au montage
+        window.addEventListener("resize", handleResize);
+
+        // Suppresion de l'écouteur au démontage
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
 
     // Lorsque l'état d'affichage du bouton ou du menu change
     useEffect(() => {
@@ -30,17 +42,16 @@ const BurgerBtn = () => {
             } else {
                 menu.classList.remove("hidden");
 
-                // Si le menu est déplié, le repli lors d'un clic (sauf sur le bouton burger)
-                const handleClick = (e) => {
+                // Si le clic ne vient pas du bouton burger, cache le menu
+                function handleClick(e) {
                     if (e.target.id !== "burger-btn") setMenuHidden(true);
                 };
 
+                // Ajout d'un événement clic sur le document
                 document.addEventListener("click", handleClick);
 
                 // Supprime l'écouteur d'événement lors du démontage
-                return () => {
-                    document.removeEventListener("click", handleClick);
-                };
+                return () => document.removeEventListener("click", handleClick)
             }
         }
 
@@ -49,6 +60,7 @@ const BurgerBtn = () => {
             menu.classList.remove("hidden");
         }
     }, [isBtnVisible, isMenuHidden]);
+
 
     return (
         <button
