@@ -54,3 +54,32 @@ src/
 ├── Trainings.jsx # Formations
 ├── Works.jsx # Réalisations / projets
 └── Works.css
+
+public/
+├── data
+│   ├── about.json
+│   ├── bijouterie.png
+│   ├── experiences.json
+│   ├── skills.json
+│   ├── socialNetworks.json
+│   ├── trainings.json
+│   └── works.json
+├── img
+│   ├── background
+│   │   ├── faded_gallery-OfdOEdGYiuk-unsplash.jpg
+│   │   ├── image2.png
+│   │   ├── image.png
+│   │   ├── pawel-czerwinski-f5ITyZ8pi5I-unsplash.jpg
+│   │   ├── pawel-czerwinski-M40QnK-PXkI-unsplash.jpg
+│   │   ├── pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg
+│   │   └── vimal-s-cPGMrfAuUSg-unsplash.jpg
+│   ├── bootstrap.svg
+│   ├── css3.svg
+│   ├── figma.svg
+│   ├── github.svg
+│   ├── html5.svg
+│   ├── javascript.svg
+│   ├── linkedin.svg
+│   ├── react.svg
+│   └── wordpress.svg
+└── vite.svg
