@@ -1,7 +1,7 @@
 [
     {
         "titre": "Bijouterie en ligne",
-        "image": "src/data/bijouterie.png",
+        "image": "/data/bijouterie.png",
         "description": "1ère réalisation web - projet fil de rouge",
         "lien": "https://navycrow.github.io/sw-bijouterie/"
     }

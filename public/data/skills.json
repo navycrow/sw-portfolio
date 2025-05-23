@@ -2,29 +2,29 @@
     "web": [
         {
             "nom": "HTML",
-            "logo": "src/assets/img/html5.svg"
+            "logo": "/img/html5.svg"
         },
         {
             "nom": "CSS",
-            "logo": "src/assets/img/css3.svg"
+            "logo": "/img/css3.svg"
         },
         {
             "nom": "JavaScript",
-            "logo": "src/assets/img/javascript.svg"
+            "logo": "/img/javascript.svg"
         },
         {
             "nom": "Bootstrap",
-            "logo": "src/assets/img/bootstrap.svg"
+            "logo": "/img/bootstrap.svg"
         },
         {
             "nom": "React",
-            "logo": "src/assets/img/react.svg"
+            "logo": "/img/react.svg"
         }
     ],
     "webDesign": [
         {
             "nom": "Figma",
-            "logo": "src/assets/img/figma.svg"
+            "logo": "/img/figma.svg"
         }
     ],
     "autres": [
