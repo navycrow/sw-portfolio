@@ -1,5 +1,6 @@
 #a-propos {
     display: grid;
+    text-align: center;
     grid-template-areas: 
     "titre"
     "photo"

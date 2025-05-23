@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import './About.css'
+import SocialNetworks from "../components/SocialNetworks";
 
 function About() {
     const [about, setAbout] = useState({});
@@ -27,21 +27,7 @@ function About() {
             </div>
             <div>
                 <p>{about.presentation}</p>
-                <p>Suivez-moi</p>
-                <div className="social-networks">
-                    <Link to={about.linkedin}>
-                        <img
-                            src="src/assets/img/linkedin/linkedin-black.png"
-                            width="25"
-                            alt="linkedIn" />
-                    </Link>
-                    <Link to={about.github}>
-                        <img
-                            src="src/assets/img/github/github-mark-black.png"
-                            width="25"
-                            alt="Github" />
-                    </Link>
-                </div>
+                <SocialNetworks/>
             </div>
         </section>
     );
