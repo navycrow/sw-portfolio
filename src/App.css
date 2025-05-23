@@ -92,6 +92,10 @@ body {
     "footer";
 }
 
+#root {
+  width: 100%;
+}
+
 
 /* Header */
 header {

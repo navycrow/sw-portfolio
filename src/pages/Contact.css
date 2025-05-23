@@ -1,3 +1,14 @@
+#contact form {
+    display: grid;
+    grid-template-areas:
+    "nom"
+    "prenom"
+    "email"
+    "message"
+    "submit";
+    gap: 1em
+}
+
 label {
     display: block;
 }
@@ -6,17 +17,7 @@ input,
 textarea {
     width: 100%;
     box-sizing: border-box;
-}
-
-#contact form {
-    display: grid;
-    grid-template-areas:
-        "nom"
-        "prenom"
-        "email"
-        "message"
-        "submit";
-    gap: 1em
+    height: 2em;
 }
 
 .nom {

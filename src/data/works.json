@@ -1,7 +1,31 @@
 [
     {
         "titre": "Bijouterie en ligne",
-        "image": "data/bijouterie.png",
+        "image": "src/data/bijouterie.png",
+        "description": "1ère réalisation web",
+        "lien": "https://navycrow.github.io/sw-bijouterie/"
+    },
+    {
+        "titre": "Bijouterie en ligne",
+        "image": "src/data/bijouterie.png",
+        "description": "1ère réalisation web",
+        "lien": "https://navycrow.github.io/sw-bijouterie/"
+    },
+    {
+        "titre": "Bijouterie en ligne",
+        "image": "src/data/bijouterie.png",
+        "description": "1ère réalisation web",
+        "lien": "https://navycrow.github.io/sw-bijouterie/"
+    },
+    {
+        "titre": "Bijouterie en ligne",
+        "image": "src/data/bijouterie.png",
+        "description": "1ère réalisation web",
+        "lien": "https://navycrow.github.io/sw-bijouterie/"
+    },
+    {
+        "titre": "Bijouterie en ligne",
+        "image": "src/data/bijouterie.png",
         "description": "1ère réalisation web",
         "lien": "https://navycrow.github.io/sw-bijouterie/"
     }
