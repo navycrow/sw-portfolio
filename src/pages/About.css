@@ -15,6 +15,10 @@
     grid-area: photo;
 }
 
+#a-propos .photo-profil {
+  width: 50%;
+}
+
 #a-propos div:last-of-type {
     grid-area: descriptif;
 }

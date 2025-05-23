@@ -1,14 +1,47 @@
-[
-    {
-        "titre": "Initiation à la cybersécurité",
-        "annee": "2022"
-    },
-    {
-        "titre": "Cadwork",
-        "annee": "2021"
-    },
-    {
-        "titre": "Sauveteur Secouriste du Travail",
-        "annee": "2021"
-    }
-]
+{
+    "diplomes": [
+        {
+            "titre": "DUEST Génie Civil",
+            "etablissement": "UPPA, Anglet",
+            "annee": "1997"
+        },
+        {
+            "titre": "BTS Travaux publics",
+            "etablissement": "LETP Cantau, Anglet",
+            "annee": "1996"
+        },
+        {
+            "titre": "BAC technologique Génie civil",
+            "etablissement": "LETP Cantau, Anglet",
+            "annee": "1994"
+        }
+    ],
+    "formations": [
+        {
+            "titre": "Initiation à la cybersécurité",
+            "annee": "2022"
+        },
+        {
+            "titre": "Cadwork",
+            "annee": "2021"
+        },
+        {
+            "titre": "Sauveteur Secouriste du Travail",
+            "annee": "2021"
+        }
+    ],
+    "langues": [
+        {
+            "langue": "Français",
+            "niveau": "C2"
+        },
+        {
+            "langue": "Anglais",
+            "niveau": "B2"
+        },
+        {
+            "langue": "Espagnol",
+            "niveau": "A2"
+        }
+    ]
+}

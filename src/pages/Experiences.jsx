@@ -13,18 +13,20 @@ const Experiences = () => {
     return (
         <section id="experiences">
             <h2>Expériences professionnelles</h2>
-            {experiences.map((experience, index) => (
-                <div key={index} className="experience">
-                    <h3>{experience.poste}</h3>
-                    <p>{experience.etablissement}</p>
-                    <ul>
-                        {experience.fonctions.map((fonction, i) => (
-                            <li key={i}>{fonction}</li>
-                        ))}
-                    </ul>
-                    <p>{experience.periode}</p>
-                </div>
-            ))}
+            <div className="container">
+                {experiences.map((experience, index) => (
+                    <div key={index} className="card">
+                        <h3>{experience.poste}</h3>
+                        <p>{experience.etablissement}</p>
+                        {/* <ul>
+                            {experience.fonctions.map((fonction, i) => (
+                                <li key={i}>{fonction}</li>
+                            ))}
+                        </ul> */}
+                        <p>{experience.periode}</p>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 };

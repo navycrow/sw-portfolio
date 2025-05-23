@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./BurgerBtn.css"
 
 const BurgerBtn = () => {
     // Définit l'état du bouton, visible par défaut

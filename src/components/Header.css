@@ -1,0 +1,138 @@
+/* Header */
+header {
+    grid-area: header;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "photo titre buttons";
+
+    align-items: center;
+}
+
+/* photo */
+#photo {
+    grid-area: photo;
+    height: var(--header-height);
+}
+
+/* titre */
+#titre {
+    grid-area: titre;
+    padding-left: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#titre h3,
+#titre p {
+    margin: 0;
+    padding: 0;
+}
+
+#titre p {
+    font-size: 0.8em;
+}
+
+/* boutons */
+#buttons {
+    grid-area: buttons;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Barre de navigation */
+#menu {
+    position: absolute;
+    background-color: var(--menu-bg-color);
+    box-shadow: 15px 15px 15px var(--section-shadow-color);
+    top: calc(var(--header-height) + 1em);
+    right: 0;
+    z-index: 1;
+}
+
+#menu ul {
+    margin: auto;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--body-txt-color)
+}
+
+
+
+@media screen and (min-width: 820px) {
+
+    /* Header */
+    header {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "photo titre buttons"
+            "menu menu menu";
+    }
+
+    #burger-btn {
+        display: none;
+    }
+
+    /* Barre de navigation */
+    #menu {
+        grid-area: menu;
+        position: relative;
+        top: auto;
+        right: auto;
+
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu ul {
+        margin: 0;
+        padding: 1em 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #menu li {
+        list-style: none;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: var(--body-txt-color)
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    /* Header */
+    header {
+        grid-template-columns: auto auto 1fr auto;
+        grid-template-areas:
+            "photo titre menu buttons";
+    }
+}

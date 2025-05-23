@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const Trainings = () => {
-    const [trainings, setTrainings] = useState([]);
+    const [trainings, setTrainings] = useState({});
 
     useEffect(() => {
         fetch("src/data/trainings.json")
@@ -11,15 +11,42 @@ const Trainings = () => {
     }, []);
 
     return (
-        <section id="formations">
-            <h2>Formations</h2>
-            {trainings.map((training, index) => (
-                <div key={index} className="formation">
-                    <h3>{training.titre}</h3>
-                    <p>{training.annee}</p>
+        <>
+            <section id="formations">
+                <h2>Formations</h2>
+                <div className="container">
+                    {trainings?.formations?.map((el, idx) => (
+                        <div key={idx} className="card">
+                            <h3>{el.titre}</h3>
+                            <p>{el.annee}</p>
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </section>
+            </section>
+            <section id="diplomes">
+                <h2>Diplômes</h2>
+                <div className="container">
+                    {trainings?.diplomes?.map((el, idx) => (
+                        <div key={idx} className="card">
+                            <h3>{el.titre}</h3>
+                            <p>{el.etablissement}</p>
+                            <p>{el.annee}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <section id="langues">
+                <h2>Langues</h2>
+                <div className="container">
+                    {trainings?.langues?.map((el, idx) => (
+                        <div key={idx} className="card">
+                            <h3>{el.langue}</h3>
+                            <p>{el.niveau}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </>
     );
 };
 

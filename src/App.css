@@ -7,7 +7,7 @@
     url('src/assets/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
   --body-txt-color: #323232;
 
-  --menu-bg-color: rgba(208, 218, 224, 1);
+  --menu-bg-color: rgba(208, 218, 224, 1); /* pour le menu déroulant */
 
   --section-bg-color: rgba(255, 255, 255, 0.5);
   --section-color: black;
@@ -22,7 +22,7 @@
     url('src/assets/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
   --body-txt-color: white;
 
-  --menu-bg-color: #282e31;
+  --menu-bg-color: #282e31;  /* pour le menu déroulant */
 
   --section-bg-color: rgba(0, 0, 0, 0.5);
   --section-color: white;
@@ -38,12 +38,6 @@
 }
 
 /* Icônes */
-#buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .icon {
   width: 32px;
   height: 32px;
@@ -62,13 +56,7 @@
   border-radius: 50%;
 }
 
-#burger-btn {
-  font-size: 42px;
-  /* ajustement manuel */
-  position: relative;
-  top: -1px;
-  /* ajustement manuel */
-}
+
 
 /* Body */
 body {
@@ -97,73 +85,7 @@ body {
 }
 
 
-/* Header */
-header {
-  grid-area: header;
-  width: 100%;
 
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-areas:
-    "photo titre buttons";
-
-  align-items: center;
-}
-
-#photo {
-  grid-area: photo;
-  height: var(--header-height);
-}
-
-#titre {
-  grid-area: titre;
-  padding-left: 1em;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-#titre h3,
-#titre p {
-  margin: 0;
-  padding: 0;
-}
-
-#titre p {
-  font-size: 0.8em;
-}
-
-#buttons {
-  grid-area: buttons;
-}
-
-/* Barre de navigation */
-#menu {
-  position: absolute;
-  background-color: var(--menu-bg-color);
-  box-shadow: 15px 15px 15px var(--section-shadow-color);
-  top: calc(var(--header-height) + 1em);
-  right: 0;
-}
-
-#menu ul {
-  margin: auto;
-  padding: 1em;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-#menu li {
-  list-style: none;
-}
-
-#menu a {
-  text-decoration: none;
-  color: var(--body-txt-color)
-}
 
 
 /* Main */
@@ -186,12 +108,23 @@ section {
   padding: 1em;
 }
 
-#a-propos .photo-profil {
-  width: 50%;
-}
 
+/* Sections */
 section h2 {
   color: var(--title-color)
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    text-align: center;
+}
+
+.card {
+    padding: 1em;
+    max-width: 300px;
 }
 
 
@@ -201,61 +134,3 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 820px) {
-
-  /* Header */
-  header {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-      "photo titre buttons"
-      "menu menu menu";
-  }
-
-  #burger-btn {
-    display: none;
-  }
-
-  /* Barre de navigation */
-  #menu {
-    grid-area: menu;
-    position: relative;
-    top: auto;
-    right: auto;
-
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-
-    display: flex;
-    justify-content: center;
-  }
-
-  #menu ul {
-    margin: 0;
-    padding: 1em 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 1em;
-  }
-
-  #menu li {
-    list-style: none;
-  }
-
-  #menu a {
-    text-decoration: none;
-    color: var(--body-txt-color)
-  }
-}
-
-@media screen and (min-width: 1150px) {
-
-  /* Header */
-  header {
-    grid-template-columns: auto auto 1fr auto;
-    grid-template-areas:
-      "photo titre menu buttons";
-  }
-}

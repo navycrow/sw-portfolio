@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 const DarkModeBtn = () => {
     // Au montage, initialise le isDarkMode depuis le localStorage,
-    // si la valeur n'existe, applique le mode clair par défaut
+    // si la valeur n'existe, applique le mode sombre par défaut
     const [isDarkMode, setDarkMode] = useState(
-        () => JSON.parse(localStorage.getItem("isDarkMode")) || false
+        () => JSON.parse(localStorage.getItem("isDarkMode")) || true
     );
 
     // Sur chaque changement de l'état

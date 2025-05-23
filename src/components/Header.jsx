@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DarkModeBtn from "./DarkModeBtn";
 import BurgerBtn from "./BurgerBtn";
+import "./Header.css";
 
 function Header() {
     const [about, setAbout] = useState({});
@@ -19,7 +20,8 @@ function Header() {
                 id="photo"
                 src={about.photo}
                 alt={`${about.prenom} ${about.nom}`}
-                className="rounded-full" />
+                className="rounded-full"
+            />
 
             <div id="titre">
                 <h3>{`${about.prenom} ${about.nom}`}</h3>
@@ -28,8 +30,8 @@ function Header() {
 
             {/* <!-- Bouton mode sombre et menu burger --> */}
             <div id="buttons">
-                <DarkModeBtn/>
-                <BurgerBtn/>
+                <DarkModeBtn />
+                <BurgerBtn />
             </div>
 
             {/* <!-- Navbar --> */}
@@ -45,12 +47,12 @@ function Header() {
                         <Link to="/works">Mes réalisations</Link>
                     </li>
                     <li>
-                        <Link to="trainings">Formations</Link>
-                    </li>
-                    <li>
                         <Link to="/experiences">
                             Expériences professionnelles
                         </Link>
+                    </li>
+                    <li>
+                        <Link to="trainings">Etudes & Formations</Link>
                     </li>
                     <li>
                         <Link to="/contact">Contact</Link>

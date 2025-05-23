@@ -1,0 +1,45 @@
+{
+    "web": [
+        {
+            "nom": "HTML",
+            "logo": "src/assets/img/html5.svg"
+        },
+        {
+            "nom": "CSS",
+            "logo": "src/assets/img/css3.svg"
+        },
+        {
+            "nom": "JavaScript",
+            "logo": "src/assets/img/javascript.svg"
+        },
+        {
+            "nom": "Bootstrap",
+            "logo": "src/assets/img/bootstrap.svg"
+        },
+        {
+            "nom": "React",
+            "logo": "src/assets/img/react.svg"
+        }
+    ],
+    "webDesign": [
+        {
+            "nom": "Figma",
+            "logo": "src/assets/img/figma.svg"
+        }
+    ],
+    "autres": [
+        "Installation et maintenance de matériels informatiques",
+        "Développement d'applications",
+        "Conseils informatiques",
+        "Microsoft Excel / Google Sheets",
+        "Microsoft Word / Google Docs",
+        "Microsoft Access",
+        "Sage Batigest",
+        "Planning PME (Target Skills)",
+        "Python",
+        "Cadwork",
+        "Microsoft Windows 10 & 11",
+        "Microsoft Windows Server 2012 R2",
+        "Linux PopOs!"
+    ]
+}
