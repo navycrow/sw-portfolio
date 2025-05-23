@@ -4,7 +4,7 @@ const Experiences = () => {
     const [experiences, setExperiences] = useState([]);
 
     useEffect(() => {
-        fetch("src/data/experiences.json")
+        fetch("/data/experiences.json")
             .then((response) => response.json())
             .then((data) => setExperiences(data))
             .catch((err) => console.error("Erreur de chargement JSON :", err));

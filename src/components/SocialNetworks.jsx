@@ -5,7 +5,7 @@ const SocialNetworks = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("src/data/socialNetworks.json")
+        fetch("/data/socialNetworks.json")
             .then((response) => response.json())
             .then((data) => setData(data))
             .catch((err) => console.error("Erreur de chargement JSON :", err));

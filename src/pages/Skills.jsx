@@ -4,7 +4,7 @@ const Skills = () => {
     const [skills, setTrainings] = useState({});
 
     useEffect(() => {
-        fetch("src/data/skills.json")
+        fetch("/data/skills.json")
             .then((response) => response.json())
             .then((data) => setTrainings(data))
             .catch((err) => console.error("Erreur de chargement JSON :", err));

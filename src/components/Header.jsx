@@ -8,7 +8,7 @@ function Header() {
     const [about, setAbout] = useState({});
 
     useEffect(() => {
-        fetch("src/data/about.json")
+        fetch("/data/about.json")
             .then((response) => response.json())
             .then((data) => setAbout(data))
             .catch((err) => console.error("Erreur de chargement JSON :", err));
