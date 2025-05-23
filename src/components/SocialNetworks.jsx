@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './SocialNetworks.css'
+import "./SocialNetworks.css";
 
 const SocialNetworks = () => {
     const [data, setData] = useState([]);
@@ -13,7 +13,8 @@ const SocialNetworks = () => {
 
     return (
         <>
-            <p>Suivez-moi</p>
+            {/* <p>Suivez-moi</p> */}
+            <br />
             <div id="social-networks">
                 {data.map((el, idx) => (
                     <div key={idx}>

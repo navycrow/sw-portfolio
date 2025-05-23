@@ -1,0 +1,65 @@
+label {
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact form {
+    display: grid;
+    grid-template-areas:
+        "nom"
+        "prenom"
+        "email"
+        "message"
+        "submit";
+    gap: 1em
+}
+
+.nom {
+    grid-area: nom;
+}
+
+.prenom {
+    grid-area: prenom;
+}
+
+.email {
+    grid-area: email;
+}
+
+.message {
+    grid-area: message;
+}
+
+.message textarea {
+    height: 10em;
+}
+
+#form-submit {
+    grid-area: submit;
+    width: 7em;
+    margin: auto;
+}
+
+@media screen and (min-width: 400px) {
+    #contact form {
+        grid-template-areas:
+            "nom prenom"
+            "email email"
+            "message message"
+            "submit submit";
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contact form {
+        grid-template-areas:
+            "nom prenom email"
+            "message message message"
+            "submit submit submit";
+    }
+}
