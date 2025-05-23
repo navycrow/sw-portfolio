@@ -4,7 +4,7 @@
   /* utilisé pour la dimension de la photo de profil et le positionnement du menu déroulant */
 
   --body-bg: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 47, 148, 0.2)),
-    url('src/assets/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
+    url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
   --body-txt-color: #323232;
 
   --menu-bg-color: rgba(208, 218, 224, 1); /* pour le menu déroulant */
@@ -19,7 +19,7 @@
 /* Mode sombre */
 :root.dark {
   --body-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 47, 148, 0.7)),
-    url('src/assets/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
+    url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
   --body-txt-color: white;
 
   --menu-bg-color: #282e31;  /* pour le menu déroulant */
