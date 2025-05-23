@@ -1,7 +1,4 @@
 - Ajouter des icones sympa pour les boutons du menu
-- Ajouter des icones pour les compétences
-- Ajouter un flex pour le a-propos (et les autres rubriques)
 - Faire une documentation
-- Gestion couleur bouton linked github suivant mode dark
 - Préciser mobile first et responsive
 - Menu burger
