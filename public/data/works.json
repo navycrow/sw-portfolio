@@ -2,7 +2,7 @@
     {
         "titre": "Site portfolio",
         "image": "/data/portfolio.png",
-        "description": "Réalisation d'un site portfolio dans le cadre de la validation des 1ers modules de formation\n\n- Conception du site en React + Vite\n- Utilisation de composants JSX/CSS\n- Site Mobile-first et full responsive\n- Gestion mode sombre/clair\n- Gestion dynamique des données",
+        "description": "Réalisation d'un site portfolio dans le cadre de la validation des 1ers modules de formation\n\nDéveloppement :\n- Conception du site en React + Vite\n- Utilisation de composants JSX/CSS\n- Site Mobile-first et full responsive\n- Gestion mode sombre/clair\n- Gestion dynamique des données",
         "lien": "https://sw-portfolio-lime.vercel.app"
     },
     {
