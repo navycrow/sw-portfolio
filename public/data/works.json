@@ -4,6 +4,11 @@
         "image": "/data/bijouterie.png",
         "description": "1ère réalisation web dans le cadre d'un projet fil rouge de ma formation.\n\nCahier des charges :\n- Maquette imposée par le client\n- Site Mobile-first et responsive\n- Gestion mode clair/sombre\n- Site web dynamique\n- Utilisation HTML/CSS/JS",
         "lien": "https://navycrow.github.io/sw-bijouterie/"
+    },
+    {
+        "titre": "Snake (mini-jeu)",
+        "image": "/data/snake.png",
+        "description": "Réalisation d'un mini-jeu type snake dans le cadre de ma formation.\n\nCahier des charges :\n- Utilisation de <canvas>\n- Déplacement en continue\n- Changement de direction\n- Controles supplémentaires (pause/reset)\n- Compteur de pas\n- Bonus: musique d'ambiance ;)",
+        "lien": "https://game-snake-seven.vercel.app/"
     }
-
 ]
