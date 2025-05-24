@@ -15,6 +15,7 @@ const Works = () => {
         <>
             <section id="works">
                 <h2>Mes réalisations</h2>
+                <p>Ci-dessous, quelques exemples de réalisations effectuées notamment durant ma formation.</p>
                 <div className="container">
                     {works.map((work, index) => (
                         <div key={index} className="card">
