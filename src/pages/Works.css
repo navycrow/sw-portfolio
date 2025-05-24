@@ -1,5 +1,8 @@
-
-
 .screenshot {
     width:100%
+}
+
+#works p {
+    text-align: start; /* alignement à gauche */
+    white-space: pre-line; /* respect des sauts de lignes */
 }

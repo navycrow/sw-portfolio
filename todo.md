@@ -2,3 +2,6 @@
 - Faire une documentation
 - Préciser mobile first et responsive
 - Menu burger
+- Ajout favicon
+- Faire un site multilangue
+- Ajouter du texte pour les réalisations
