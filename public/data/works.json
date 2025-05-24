@@ -1,14 +1,20 @@
 [
     {
-        "titre": "Bijouterie en ligne",
-        "image": "/data/bijouterie.png",
-        "description": "1ère réalisation web dans le cadre d'un projet fil rouge de ma formation.\n\nCahier des charges :\n- Maquette imposée par le client\n- Site Mobile-first et responsive\n- Gestion mode clair/sombre\n- Site web dynamique\n- Utilisation HTML/CSS/JS",
-        "lien": "https://sw-bijouterie.vercel.app/"
+        "titre": "Site portfolio",
+        "image": "/data/portfolio.png",
+        "description": "Réalisation d'un site portfolio dans le cadre de la validation des 1ers modules de formation\n\n- Conception du site en React + Vite\n- Utilisation de composants JSX/CSS\n- Site Mobile-first et full responsive\n- Gestion mode sombre/clair\n- Gestion dynamique des données",
+        "lien": "https://sw-portfolio-lime.vercel.app"
     },
     {
         "titre": "Snake (mini-jeu)",
         "image": "/data/snake.png",
         "description": "Réalisation d'un mini-jeu type snake dans le cadre de ma formation.\n\nCahier des charges :\n- Utilisation de <canvas>\n- Déplacement en continue\n- Changement de direction\n- Controles supplémentaires (pause/reset)\n- Compteur de pas\n- Bonus: musique d'ambiance ;)",
         "lien": "https://game-snake-seven.vercel.app/"
+    },
+    {
+        "titre": "Bijouterie en ligne",
+        "image": "/data/bijouterie.png",
+        "description": "1ère réalisation web dans le cadre d'un projet fil rouge de ma formation.\n\nCahier des charges :\n- Maquette imposée par le client\n- Site Mobile-first et responsive\n- Gestion mode clair/sombre\n- Site web dynamique\n- Utilisation HTML/CSS/JS",
+        "lien": "https://sw-bijouterie.vercel.app/"
     }
 ]
