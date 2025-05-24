@@ -12,7 +12,7 @@
         "lien": "https://game-snake-seven.vercel.app/"
     },
     {
-        "titre": "Bijouterie en ligne",
+        "titre": "Bijouterie en ligne (démo)",
         "image": "/data/bijouterie.png",
         "description": "1ère réalisation web dans le cadre d'un projet fil rouge de ma formation.\n\nCahier des charges :\n- Maquette imposée par le client\n- Site Mobile-first et responsive\n- Gestion mode clair/sombre\n- Site web dynamique\n- Utilisation HTML/CSS/JS",
         "lien": "https://sw-bijouterie.vercel.app/"
