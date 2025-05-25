@@ -16,15 +16,17 @@ function App() {
             <Router>
                 <Header />
 
-                <Routes>
-                    <Route path="/" element={<About />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/skills" element={<Skills />} />
-                    <Route path="/works" element={<Works />} />
-                    <Route path="/trainings" element={<Trainings />} />
-                    <Route path="/experiences" element={<Experiences />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
+                <main>
+                    <Routes>
+                        <Route path="/" element={<About />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/skills" element={<Skills />} />
+                        <Route path="/works" element={<Works />} />
+                        <Route path="/trainings" element={<Trainings />} />
+                        <Route path="/experiences" element={<Experiences />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </main>
 
                 <Footer />
             </Router>

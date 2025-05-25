@@ -1,0 +1,7 @@
+/* Footer */
+footer {
+  grid-area: footer;
+  
+  padding: var(--padding-default);
+  text-align: center;
+}
