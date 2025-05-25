@@ -28,7 +28,11 @@ header {
     justify-content: space-evenly;
 }
 
-#titre h3,
+h1 {
+    font-size: 1.4em;
+}
+
+#titre h1,
 #titre p {
     margin: 0;
     padding: 0;

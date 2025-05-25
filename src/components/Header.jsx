@@ -24,7 +24,7 @@ function Header() {
             />
 
             <div id="titre">
-                <h3>{`${about.prenom} ${about.nom}`}</h3>
+                <h1>{`${about.prenom} ${about.nom}`}</h1>
                 <p>{about.poste}</p>
             </div>
 
