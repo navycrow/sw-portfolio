@@ -18,7 +18,7 @@ const Skills = () => {
                     {skills?.web?.map((el, idx) => (
                         <div key={idx} className="card">
                             <h3>{el.nom}</h3>
-                            <img className="icon" src={el.logo} alt={el.nom} />
+                            <img className="icon svg" src={el.logo} alt={el.nom} />
                         </div>
                     ))}
                 </div>
@@ -30,7 +30,7 @@ const Skills = () => {
                     {skills?.webDesign?.map((el, idx) => (
                         <div key={idx} className="card">
                             <h3>{el.nom}</h3>
-                            <img className="icon" src={el.logo} alt={el.nom} />
+                            <img className="icon svg" src={el.logo} alt={el.nom} />
                         </div>
                     ))}
                 </div>

@@ -48,6 +48,10 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: var(--body-txt-color)
+}
+
+.svg {
   filter: var(--filter) /* permet de changer la couleur suivant le mode clair/sombre */
 }
 
