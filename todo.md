@@ -11,3 +11,4 @@
 - ajout animation a l'affichage des sections
 - flex pour le formulaire
 - ajout CV
+- améliorer les performances
