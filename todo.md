@@ -12,3 +12,4 @@
 - ajout CV
 - améliorer les performances
 - ajouter voir plus pour l'experience pro
+- remplacer les emojis du menu par des svg
