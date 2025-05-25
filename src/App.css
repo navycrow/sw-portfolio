@@ -11,13 +11,15 @@
     url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
   --body-txt-color: #323232;
 
-  --menu-bg-color: rgba(208, 218, 224, 1); /* pour le menu déroulant */
+  --menu-bg-color: rgba(208, 218, 224, 1);
+  /* pour le menu déroulant */
 
   --section-bg-color: rgba(255, 255, 255, 0.5);
   --section-color: black;
   --section-shadow-color: rgba(0, 0, 0, 0.5);
 
-  --filter: invert(0%)  /* couleur par défaut (noir) pour les svg */
+  --filter: invert(0%)
+    /* couleur par défaut (noir) pour les svg */
 }
 
 /* Mode sombre */
@@ -26,13 +28,15 @@
     url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash.jpg');
   --body-txt-color: white;
 
-  --menu-bg-color: #282e31;  /* pour le menu déroulant */
+  --menu-bg-color: #282e31;
+  /* pour le menu déroulant */
 
   --section-bg-color: rgba(0, 0, 0, 0.5);
   --section-color: white;
   --section-shadow-color: rgba(255, 255, 255, 0.5);
 
-  --filter: invert(100%)  /* couleur inverse (blanc) pour les svg */
+  --filter: invert(100%)
+    /* couleur inverse (blanc) pour les svg */
 }
 
 
@@ -56,7 +60,8 @@
 }
 
 .svg {
-  filter: var(--filter) /* permet de changer la couleur suivant le mode clair/sombre */
+  filter: var(--filter)
+    /* permet de changer la couleur suivant le mode clair/sombre */
 }
 
 /* Photo ronde */
@@ -120,26 +125,33 @@ section {
   border-radius: 0.5em;
 
   padding: var(--padding-default);
-  
-  flex: 1 1 auto; /* utiliser tout l'espace disponible - taille proportionnelle */
+
+  flex: 1 1 auto;
+  /* utiliser tout l'espace disponible - taille proportionnelle */
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+  /* utiliser tout l'espace disponible - taille proportionnelle */
 }
 
 /* Titre section */
 section h2 {
-  text-align: center; 
+  text-align: center;
 }
 
 /* Container */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2em;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+  text-align: center;
 }
 
 /* Carte */
 .card {
-    padding: var(--padding-default);
-    max-width: 300px;
+  padding: var(--padding-default);
+  max-width: 300px;
 }
