@@ -10,7 +10,7 @@
 }
 
 label {
-    display: block;
+    display: block; /* saut à la ligne après l'étiquette */
 }
 
 input,

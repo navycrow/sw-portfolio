@@ -8,3 +8,5 @@
 - Ajout favicon
 - Faire un site multilangue
 - Faire un header sticky ou systeme de retour en haut de la page
+- ajout animation a l'afficha des sections
+- flex pour le formulaire
