@@ -5,3 +5,7 @@ footer {
   padding: var(--padding-default);
   text-align: center;
 }
+
+footer p {
+  font-size: 0.9em;
+}
