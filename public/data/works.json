@@ -6,19 +6,19 @@
         "lien": "https://sw-portfolio-lime.vercel.app"
     },
     {
-        "titre": "Les délices d'Arrousets",
+        "titre": "Les délices d'Arrousets (démo)",
         "image": "/data/delices.png",
         "description": "Réalisation d'un site de recettes de cuisine dans le cadre de ma formation :\n\nCahier des charges :\n- Conception du site sous Wordpress\n- Création d'une page d'accueil, d'une page A propos, d'une page d'articles et d'un formulaire de contact\n- Utilisation du plugin Elementor pour la mise en page",
         "lien": "https://delices.ct.ws/"
     },
     {
-        "titre": "Association (mini-web-app)",
+        "titre": "Association (mini web-app)",
         "image": "/data/association.png",
         "description": "Développement d'une mini interface web dans le cadre de ma formation.\n\nCahier des charges :\n- Application pour une association de quartier\n- Tableau dynamique d'adhérents\n- Couleurs selon paiement de la cotisation\n- Filtre de recherche et trie alphabétique\n- Carousel d'événement avec Bootstrap\n- Responsive",
         "lien": "https://wa-association.vercel.app/"
     },
     {
-        "titre": "Snake (mini-jeu)",
+        "titre": "Snake (mini jeu)",
         "image": "/data/snake.png",
         "description": "Réalisation d'un mini-jeu type snake dans le cadre de ma formation.\n\nCahier des charges :\n- Utilisation de <canvas>\n- Déplacement en continue\n- Changement de direction\n- Controles supplémentaires (pause/reset)\n- Compteur de pas\n- Bonus: musique d'ambiance ;)",
         "lien": "https://game-snake-seven.vercel.app/"
