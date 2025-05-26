@@ -18,8 +18,10 @@
   --section-color: black;
   --section-shadow-color: rgba(0, 0, 0, 0.5);
 
-  --filter: invert(0%)
-    /* couleur par défaut (noir) pour les svg */
+  --filter: invert(0%);
+  /* couleur par défaut (noir) pour les svg */
+
+  --see-more-color: red
 }
 
 /* Mode sombre */
@@ -35,8 +37,10 @@
   --section-color: white;
   --section-shadow-color: rgba(255, 255, 255, 0.5);
 
-  --filter: invert(100%)
-    /* couleur inverse (blanc) pour les svg */
+  --filter: invert(100%);
+  /* couleur inverse (blanc) pour les svg */
+
+  --see-more-color: lightcoral
 }
 
 
@@ -69,6 +73,16 @@
   border-radius: 50%;
 }
 
+/* En savoir plus */
+.see-more {
+  color: var(--see-more-color);
+  cursor: pointer;
+  transition: scale 0.5s;
+}
+
+.see-more:hover {
+  scale: 1.2;
+}
 
 
 /* Body */

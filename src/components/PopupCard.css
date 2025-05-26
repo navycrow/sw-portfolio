@@ -1,0 +1,8 @@
+.popup-card {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    z-index: 1;
+    padding: var(--padding-default);
+    margin: auto;
+}
