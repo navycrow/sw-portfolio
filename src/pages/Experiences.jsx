@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const Experiences = () => {
     const [experiences, setExperiences] = useState([]);
-    const [selectedItem, selectItem] = useState(-1);
+    const [selectedItem, selectItem] = useState(-1); /* pour l'affichage de la popup */
 
     // Récupération des données
     useEffect(() => {
