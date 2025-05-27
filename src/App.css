@@ -185,7 +185,7 @@ section h2 {
     height: 100vh;
 
     z-index:998; /* juste derrière la popup */
-    background-color: rgba(0, 0, 0, 0.7); /* on opacifie l'arrière plan */
+    background-color: rgba(128,128,128, 0.5); /* on opacifie l'arrière plan */
     backdrop-filter: blur(2px);   /* flou */
 }
 
