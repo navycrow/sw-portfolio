@@ -21,7 +21,7 @@
   --filter: invert(0%);
   /* couleur par défaut (noir) pour les svg */
 
-  --see-more-color: red
+  --popup-call-color: red
 }
 
 /* Mode sombre */
@@ -40,7 +40,7 @@
   --filter: invert(100%);
   /* couleur inverse (blanc) pour les svg */
 
-  --see-more-color: lightcoral
+  --popup-call-color: lightcoral
 }
 
 
@@ -73,16 +73,7 @@
   border-radius: 50%;
 }
 
-/* En savoir plus */
-.see-more {
-  color: var(--see-more-color);
-  cursor: pointer;
-  transition: scale 0.5s;
-}
 
-.see-more:hover {
-  scale: 1.2;
-}
 
 
 /* Body */
@@ -168,4 +159,56 @@ section h2 {
 .card {
   padding: var(--padding-default);
   max-width: 300px;
+}
+
+
+/* ==== Popup ===== */
+/* Popup call */
+.popup-call {
+  color: var(--popup-call-color);
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: scale 0.5s;
+}
+
+.popup-call:hover {
+  scale: 1.2;
+}
+
+/* Popup oerlay - placé juste derrière la popup card pour masquer le reste de l'écran */
+.popup-overlay {
+    /* On couvre la surface d'affichage */
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+
+    z-index:998; /* juste derrière la popup */
+    background-color: rgba(0, 0, 0, 0.7); /* on opacifie l'arrière plan */
+    backdrop-filter: blur(2px);   /* flou */
+}
+
+/* Popup card - Contenu */
+.popup-card {
+    /* Positionne la popup au centre de l'écran */
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Place la popup au 1er plan */
+    z-index: 999;
+
+    background-color: var(--menu-bg-color);
+    padding: var(--padding-default);
+    border-radius: 0.5em;
+    width: 50%;
+}
+
+/* Bouton de fermeture */
+.popup-close {
+    text-align: right;
+    margin: 0;
+    cursor: pointer;
 }
