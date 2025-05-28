@@ -16,12 +16,14 @@ function Header() {
 
     return (
         <header>
-            <img
-                id="photo"
-                src={about.photo}
-                alt={`${about.prenom} ${about.nom}`}
-                className="rounded-full"
-            />
+            <Link to="/">
+                <img
+                    id="photo"
+                    src={about.photo}
+                    alt={`${about.prenom} ${about.nom}`}
+                    className="rounded-full"
+                />
+            </Link>
 
             <div id="titre">
                 <h1>{`${about.prenom} ${about.nom}`}</h1>
