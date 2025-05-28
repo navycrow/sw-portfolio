@@ -203,7 +203,11 @@ section h2 {
     background-color: var(--menu-bg-color);
     padding: var(--padding-default);
     border-radius: 0.5em;
-    width: 50%;
+
+    width: max-content;  /* ajuster au contenu dans la limite de la largeur max défini */
+    max-width: 80vw;
+    max-height: 90vh;
+    overflow: auto; /* gère le débordement */
 }
 
 /* Bouton de fermeture */
