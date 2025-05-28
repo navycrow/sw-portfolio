@@ -69,7 +69,7 @@ const BurgerBtn = () => {
             className="icon"
             onClick={() => setMenuHidden(!isMenuHidden)} // change l'état
         >
-            {isMenuHidden ? "☰" : "🗙"}
+            {isMenuHidden ? "☰" : "x"}
         </button>
     );
 };
