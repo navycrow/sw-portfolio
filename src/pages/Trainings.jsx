@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './Trainings.css'
 
 const Trainings = () => {
     const [trainings, setTrainings] = useState({});
@@ -41,6 +42,7 @@ const Trainings = () => {
                     {trainings?.langues?.map((el, idx) => (
                         <div key={idx} className="card">
                             <h3>{el.langue}</h3>
+                            <img className="flag" src={el.flag} alt={el.langue} />
                             <p>{el.niveau}</p>
                         </div>
                     ))}

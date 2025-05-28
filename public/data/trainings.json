@@ -33,15 +33,18 @@
     "langues": [
         {
             "langue": "Français",
-            "niveau": "C2"
+            "niveau": "C2 - Expérimenté",
+            "flag": "/img/flags/fr.svg"
         },
         {
             "langue": "Anglais",
-            "niveau": "B2"
+            "niveau": "B2 - Avancé",
+            "flag": "/img/flags/gb.svg"
         },
         {
             "langue": "Espagnol",
-            "niveau": "A2"
+            "niveau": "A2 - Intermédiaire",
+            "flag": "/img/flags/es.svg"
         }
     ]
 }
