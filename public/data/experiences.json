@@ -34,9 +34,11 @@
         "poste": "Dessinateur / projeteur",
         "etablissement": "DARRIEUMERLOU",
         "fonctions": [
-            "Transformation des relevés réalisés en dessins numériques en 3D à l'aide des logiciels SKETCHUP et CADWORK en vue de le présenter au client.",
-            "Elaboration de plans et de listes de débit et d'usinage. Export vers commande numérique",
-            "Elaboration de plans pour déclaration de travaux"
+            "Utilisation des logiciels Sketchup et Cadwork.",
+            "Création de modèles 3D à partir des relevés de chantiers.",
+            "Elaboration de plans d'éxécution pour les déclarations de travaux et la mise en oeuvre.",
+            "Création de listes de débit et d'usinage.",
+            "Exportation vers les machines à commande numérique."
         ],
         "periode": "2008 / Août. 2024"
     },
