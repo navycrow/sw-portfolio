@@ -15,16 +15,15 @@
         "poste": "Administrateur systèmes et réseaux / Développeur d'applications",
         "etablissement": "DARRIEUMERLOU",
         "fonctions": [
-            "Installation de nouveaux matériels et équipements informatiques (logiciels, antivirus, imprimantes, ordinateurs …), réalisation des mises à jour.",
-            "Diagnostic et résolution des incidents sur logiciels, matériels, systèmes, téléphonie et réseaux.",
-            "Installation des ordinateurs et configuration des postes de travail",
-            "Gestion du parc informatique (15 postes, 6 imprimantes, 1 serveur, 3 commandes numériques), de la téléphonie fixe et mobile.",
+            "Choix, achat, installation et configuration des équipements informatiques (serveur, ordinateurs, imprimantes, réseaux, logiciels) et téléphoniques (téléphones fixes et mobile, serveur PABX / IPBX).",
+            "Maintenance du parc, gestion de la sécurité du réseau et des appareils, maintien des systèmes d'exploitation (Microsoft Server, Microsoft Windows, iOS, Android.",
+            "Diagnostic et résolution des incidents matériels et logiciels.",
             "Sensibilisation des utilisateurs sur les bonnes pratiques en matière de sécurité informatique.",
-            "Commande, réception et installation du matériel : PC, tablettes, smartphones, téléphones.",
-            "Conception et développement d'applications et de solutions logicielles répondant à des problématiques de l'entreprise notamment autour des outils métiers Sage Batigest et Planning PME de Target Skills",
-            "Exploitation de base de données, extraction, analyse",
-            "Outils utilisés : Access/Excel + VBA, Python",
-            "Connaissances : Powershell, Javascript, AutoIt"
+            "Conception et développement d'applications front-end et back-end notamment autour des outils métiers Sage Batigest et Planning PME de Target Skills.",
+            "Développement de plugins pour Sketchup.",
+            "Exploitation, extraction et analyse de base de données sous Microsoft Access et Microsoft SQL Server.",
+            "Réalisation d'outils d'analyse sous Microsoft Excel et Google Sheets.",
+            "Utilisation des langages Powershell, VBA (Visual Basic for Application), AutoIt, Ruby, Python et Google Apps Script."
         ],
         "periode": "Sept. 1997 / Août. 2024"
     },
@@ -44,22 +43,23 @@
         "poste": "Chargé d'affaires / Métreur",
         "etablissement": "DARRIEUMERLOU",
         "fonctions": [
-            "Relevés de mesures sur site",
-            "Établissement d'une proposition commerciale en adaptant l'offre aux besoins du client, chiffrage du coût.",
-            "Utilisation de Sage Batigest",
+            "Réalisation de relevés sur site",
+            "Etude des travaux à réaliser.",
+            "Réalisation de plans.",
+            "Établissement de proposition commerciale sous Sage Batigest",
             "Réponse aux appels d'offres : analyse du dossier, préparation des pièces justificatives demandées."
         ],
-        "periode": "Sept. 1997 / 2008"
+        "periode": "Sept. 1997 / 2012"
     },
     {
         "poste": "Assistant administratif polyvalent",
         "etablissement": "DARRIEUMERLOU",
         "fonctions": [
-            "Gestion du matériel de bureau (cartouches d'encre, papiers, stylos, feutres, etc.), notamment des stocks et des approvisionnements, en anticipant les besoins afin que les collaborateurs disposent en permanence du matériel nécessaire.",
-            "Réponse aux appels téléphoniques de l'entreprise, en filtrant les demandes, en prenant des messages et en transférant les appels vers l'interlocuteur concerné le cas échéant.",
-            "Commande de matériel de chantier et quincaillerie",
-            "Rédaction de devis",
-            "Soutien administratif"
+            "Gestion du matériel et des fournitures de bureau (cartouches d'encre, papiers, stylos, feutres, etc.).",
+            "Réponse aux appels téléphoniques de l'entreprise.",
+            "Commande de matériel de chantier et de quincaillerie.",
+            "Rédaction de devis.",
+            "Soutien administratif (rédaction de courrier, aide à la tenue des comptes)."
         ],
         "periode": "Sept. 1997 / 2007"
     },
