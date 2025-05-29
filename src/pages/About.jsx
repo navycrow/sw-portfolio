@@ -20,6 +20,8 @@ function About() {
                     <img
                         src={about.photo}
                         alt={`${about.prenom} ${about.nom}`}
+                        width="533"
+                        height="auto"
                         className="rounded-full photo-profil"
                     />
                     <h3>
