@@ -1,32 +1,37 @@
 #a-propos {
-    display: grid;
-    text-align: center;
-    grid-template-areas: 
+  display: grid;
+  text-align: center;
+  grid-template-areas:
     "titre"
     "photo"
     "descriptif";
 }
 
 #a-propos h2 {
-    grid-area: titre;
-} */
+  grid-area: titre;
+}
 
+#a-propos div {
+  padding: var(--padding-default);
+}
 
 #a-propos div:first-of-type {
-    grid-area: photo;
+  grid-area: photo;
 }
 
 #a-propos .photo-profil {
-  width: 50%;
+  /* width: 50%; */
+  /* aspect-ratio: 1/1; */
 }
 
 #a-propos div:last-of-type {
-    grid-area: descriptif;
-    text-align: justify;
+  grid-area: descriptif;
+  text-align: justify;
 }
 
 @media screen and (min-width: 820px) {
   #a-propos {
+    grid-template-columns: auto 1fr;
     grid-template-areas:
       "titre titre"
       "photo descriptif";

@@ -15,7 +15,7 @@ header {
 /* photo */
 #photo {
     grid-area: photo;
-    height: var(--header-height);
+    /* height: var(--header-height); */
 }
 
 /* titre */

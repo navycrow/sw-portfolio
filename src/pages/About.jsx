@@ -16,24 +16,23 @@ function About() {
         <section id="a-propos">
             <h2>A propos de moi</h2>
 
-                <div>
-                    <img
-                        src={about.photo}
-                        alt={`${about.prenom} ${about.nom}`}
-                        width="300"  // pour réserver la place au chargement de la page
-                        height="auto"
-                        className="rounded-full photo-profil"
-                    />
-                    <h3>
-                        {about.prenom} {about.nom}
-                    </h3>
-                    <h4>{about.poste}</h4>
-                </div>
-                <div>
-                    <p>{about.presentation}</p>
-                    <SocialNetworks />
-                </div>
-
+            <div>
+                <img
+                    src={about.photo}
+                    alt={`${about.prenom} ${about.nom}`}
+                    width="280" // pour réserver la place au chargement de la page
+                    height="280"
+                    className="rounded-full photo-profil"
+                />
+                <h3>
+                    {about.prenom} {about.nom}
+                </h3>
+                <h4>{about.poste}</h4>
+            </div>
+            <div>
+                <p>{about.presentation}</p>
+                <SocialNetworks />
+            </div>
         </section>
     );
 }
