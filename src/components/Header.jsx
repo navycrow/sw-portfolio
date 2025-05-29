@@ -43,10 +43,10 @@ function Header() {
                         <Link to="/about">A propos de moi</Link>
                     </li>
                     <li>
-                        <Link to="/skills">Mes compétences</Link>
+                        <Link to="/works">Mes réalisations</Link>
                     </li>
                     <li>
-                        <Link to="/works">Mes réalisations</Link>
+                        <Link to="/skills">Mes compétences</Link>
                     </li>
                     <li>
                         <Link to="/experiences">
