@@ -20,6 +20,8 @@ function Header() {
                 <img
                     id="photo"
                     src={about.photo}
+                    width="70" // pour réserver la place au chargement de la page
+                    heigth="auto"
                     alt={`${about.prenom} ${about.nom}`}
                     className="rounded-full"
                 />

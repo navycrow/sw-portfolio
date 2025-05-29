@@ -20,7 +20,7 @@ function About() {
                     <img
                         src={about.photo}
                         alt={`${about.prenom} ${about.nom}`}
-                        width="533"
+                        width="300"  // pour réserver la place au chargement de la page
                         height="auto"
                         className="rounded-full photo-profil"
                     />
