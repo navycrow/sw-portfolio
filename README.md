@@ -9,6 +9,7 @@ Ce site présente mon parcours, mes compétences, ainsi que plusieurs projets r�
 - **React.js** – Framework JavaScript pour construire l'interface utilisateur
 - **Vite** – Outil de build rapide pour les projets front-end
 - **Vercel** – Plateforme d’hébergement utilisée pour le déploiement
+- **FormSubmit.co** – Plateforme de gestion de formulaire de contact
 
 ## 🧭 Contenu du portfolio
 
