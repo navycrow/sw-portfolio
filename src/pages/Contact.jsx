@@ -33,6 +33,11 @@ const Contact = () => {
                     <label htmlFor="message">Message *</label>
                     <textarea name="message" id="message" required></textarea>
                 </div>
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Nouveau contact depuis votre portfolio"
+                ></input>
                 <input type="submit" id="form-submit" />
                 <p>
                     <em>* Champs requis</em>
