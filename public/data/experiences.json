@@ -1,7 +1,7 @@
 [
     {
         "poste": "Conseiller immobilier",
-        "etablissement": "EI Hervé GONZALEZ",
+        "etablissement": "EI Hervé GONZALEZ, Bayonne",
         "fonctions": [
             "Prospection de biens immobiliers de types maisons et appartements.",
             "Estimation des biens selon leurs caractéristiques (superficie, travaux à prévoir, secteur géographique…) et les prix du marché.",
@@ -13,7 +13,7 @@
     },
     {
         "poste": "Administrateur systèmes et réseaux / Développeur d'applications",
-        "etablissement": "DARRIEUMERLOU",
+        "etablissement": "DARRIEUMERLOU, Bardos",
         "fonctions": [
             "Choix, achat, installation et configuration des équipements informatiques (serveur, ordinateurs, imprimantes, réseaux, logiciels) et téléphoniques (téléphones fixes et mobile, serveur PABX / IPBX).",
             "Maintenance du parc, gestion de la sécurité du réseau et des appareils, maintien des systèmes d'exploitation (Microsoft Server, Microsoft Windows, iOS, Android.",
@@ -29,7 +29,7 @@
     },
     {
         "poste": "Dessinateur / projeteur",
-        "etablissement": "DARRIEUMERLOU",
+        "etablissement": "DARRIEUMERLOU, Bardos",
         "fonctions": [
             "Utilisation des logiciels Sketchup et Cadwork.",
             "Création de modèles 3D à partir des relevés de chantiers.",
@@ -41,7 +41,7 @@
     },
     {
         "poste": "Chargé d'affaires / Métreur",
-        "etablissement": "DARRIEUMERLOU",
+        "etablissement": "DARRIEUMERLOU, Bardos",
         "fonctions": [
             "Réalisation de relevés sur site",
             "Etude des travaux à réaliser.",
@@ -53,7 +53,7 @@
     },
     {
         "poste": "Assistant administratif polyvalent",
-        "etablissement": "DARRIEUMERLOU",
+        "etablissement": "DARRIEUMERLOU, Bardos",
         "fonctions": [
             "Gestion du matériel et des fournitures de bureau (cartouches d'encre, papiers, stylos, feutres, etc.).",
             "Réponse aux appels téléphoniques de l'entreprise.",
@@ -65,7 +65,7 @@
     },
     {
         "poste": "Ouvrier BTP (stage)",
-        "etablissement": "RENE LAPORTE",
+        "etablissement": "RENE LAPORTE, Anglet",
         "fonctions": [
             "Construction d'un bassin de rétention enterré",
             "Travaux de maçonnerie dans une station d'épuration"
@@ -74,7 +74,7 @@
     },
     {
         "poste": "Manœuvre bâtiment",
-        "etablissement": "SOPREMA",
+        "etablissement": "SOPREMA, Bordeaux",
         "fonctions": [
             "Remplacement d'étanchéité sur toitures terrasses d'immeubles"
         ],
