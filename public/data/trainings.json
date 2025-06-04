@@ -19,15 +19,23 @@
     "formations": [
         {
             "titre": "Initiation à la cybersécurité",
+            "etablissement": "Vertego, Pau",
             "annee": "2022"
         },
         {
             "titre": "Cadwork",
+            "etablissement": "Cadwork France",
             "annee": "2021"
         },
         {
             "titre": "Sauveteur Secouriste du Travail",
+            "etablissement": "Etché Formation, Mauléon",
             "annee": "2021"
+        },
+                {
+            "titre": "Sketchup",
+            "etablissement": "ATI, Anglet",
+            "annee": "2012"
         }
     ],
     "langues": [

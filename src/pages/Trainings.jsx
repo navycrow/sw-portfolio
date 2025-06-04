@@ -19,6 +19,7 @@ const Trainings = () => {
                     {trainings?.formations?.map((el, idx) => (
                         <div key={idx} className="card">
                             <h3>{el.titre}</h3>
+                            <p>{el.etablissement}</p>
                             <p>{el.annee}</p>
                         </div>
                     ))}
