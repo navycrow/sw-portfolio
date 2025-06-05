@@ -40,7 +40,7 @@ const Contact = () => {
         setTimeout(() => {
             setMsg("");
             form.reset();
-        }, 5000);
+        }, 8000);
     }
 
     return (
@@ -90,6 +90,13 @@ const Contact = () => {
                         type="hidden"
                         name="_subject"
                         value="Nouveau message depuis votre portfolio"
+                    ></input>
+
+                    {/* Anti-spam */}
+                    <input
+                        type="text"
+                        name="_honey"
+                        style={{ display: "none" }}
                     ></input>
 
                     {/* Désactivation du captcha */}
