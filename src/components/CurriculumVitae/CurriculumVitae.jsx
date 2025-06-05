@@ -36,163 +36,183 @@ const CurriculumVitae = () => {
         );
     }, []);
 
+    // Lance l'impression
+    const handlePrint = () => {
+        window.print();
+    };
+
     return cvData ? (
-        <div id="cv">
-            {/* Entete */}
-            <div id="cv-header">
-                <h1>
-                    {cvData.about.prenom} {cvData.about.nom}{" "}
-                </h1>
-                <p>{cvData.about.poste}</p>
+        <>
+            <div className="cv-print no-print">
+                <button onClick={handlePrint}>Imprimer</button>
             </div>
 
-            {/* Aside */}
-            <div id="cv-aside">
-                {/* Photo */}
-                <img
-                    src={cvData.about.photo}
-                    alt={cvData.about.prenom}
-                    width={150}
-                    height={150}
-                    style={{ borderRadius: "50%", display: "block", margin: "auto", padding:"1em" }}
-                />
-
-                {/* Coordonnées */}
-                <div className="cv-section">
-                    <h3 className="cv-title">Coordonnées</h3>
-                    <div>
-                        <p>
-                            <strong>Email</strong>
-                        </p>
-                        <p>{cvData.about.email}</p>
-                    </div>
-
-                    <div>
-                        <p>
-                            <strong>Téléphone</strong>
-                        </p>
-                        <p>{cvData.about.tel}</p>
-                    </div>
-
-                    <div>
-                        <p>
-                            <strong>Site web</strong>
-                        </p>
-                        <p>{cvData.about.siteWeb}</p>
-                    </div>
-
-                    <div>
-                        <p>
-                            <strong>{cvData.socialNetworks[0].alt}</strong>
-                        </p>
-                        <p>{cvData.socialNetworks[0].href}</p>
-                    </div>
+            <div id="cv">
+                {/* Entete */}
+                <div id="cv-header">
+                    <h1>
+                        {cvData.about.prenom} {cvData.about.nom}{" "}
+                    </h1>
+                    <p>{cvData.about.poste}</p>
                 </div>
 
-                {/* Langues */}
-                <div className="cv-section">
-                    <h3 className="cv-title">Langues</h3>
-                    {cvData.trainings.langues.map((langue, idx) => (
-                        <div key={idx}>
+                {/* Aside */}
+                <div id="cv-aside">
+                    {/* Photo */}
+                    <div className="cv-section">
+                        <img
+                            src={cvData.about.photo}
+                            alt={cvData.about.prenom}
+                            width={150}
+                            height={150}
+                            style={{
+                                borderRadius: "50%",
+                                display: "block",
+                                margin: "auto",
+                                padding: "1em",
+                            }}
+                        />
+                    </div>
+
+                    {/* Coordonnées */}
+                    <div className="cv-section">
+                        <h3 className="cv-title">Coordonnées</h3>
+                        <div>
                             <p>
-                                <strong>
-                                    <img
-                                        src={langue.flag}
-                                        alt={langue.langue}
-                                        width={16}
-                                    />{" "}
-                                    {langue.langue}
-                                </strong>
+                                <strong>Email</strong>
                             </p>
-                            <p>{langue.niveau}</p>
+                            <p>{cvData.about.email}</p>
                         </div>
-                    ))}
-                </div>
 
-                {/* Compétences web */}
-                <div className="cv-section">
-                    <h3 className="cv-title">Compétences</h3>
-                    <div>
-                        <h4>Web</h4>
-                        {cvData.skills.web.map((skill, idx) => (
+                        <div>
+                            <p>
+                                <strong>Téléphone</strong>
+                            </p>
+                            <p>{cvData.about.tel}</p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <strong>Site web</strong>
+                            </p>
+                            <p>{cvData.about.siteWeb}</p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <strong>{cvData.socialNetworks[0].alt}</strong>
+                            </p>
+                            <p>{cvData.socialNetworks[0].href}</p>
+                        </div>
+                    </div>
+
+                    {/* Langues */}
+                    <div className="cv-section">
+                        <h3 className="cv-title">Langues</h3>
+                        {cvData.trainings.langues.map((langue, idx) => (
                             <div key={idx}>
                                 <p>
-                                    <img
-                                        src={skill.logo}
-                                        alt={skill.nom}
-                                        width={16}
-                                    />{" "}
-                                    {skill.nom}
+                                    <strong>
+                                        <img
+                                            src={langue.flag}
+                                            alt={langue.langue}
+                                            width={16}
+                                        />{" "}
+                                        {langue.langue}
+                                    </strong>
                                 </p>
+                                <p>{langue.niveau}</p>
                             </div>
                         ))}
                     </div>
 
-                    <div>
-                        <h4>Web design</h4>
-                        {cvData.skills.webDesign.map((skill, idx) => (
+                    {/* Compétences web */}
+                    <div className="cv-section">
+                        <h3 className="cv-title">Compétences</h3>
+                        <div>
+                            <h4>Web</h4>
+                            {cvData.skills.web.map((skill, idx) => (
+                                <div key={idx}>
+                                    <p>
+                                        <img
+                                            src={skill.logo}
+                                            alt={skill.nom}
+                                            width={16}
+                                        />{" "}
+                                        {skill.nom}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div>
+                            <h4>Web design</h4>
+                            {cvData.skills.webDesign.map((skill, idx) => (
+                                <div key={idx}>
+                                    <p>
+                                        <img
+                                            src={skill.logo}
+                                            alt={skill.nom}
+                                            width={16}
+                                        />{" "}
+                                        {skill.nom}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Main */}
+                <div id="cv-main">
+                    {/* <p>{cvData.about.presentation}</p> */}
+
+                    {/* Expérience professionnelle */}
+                    <div className="cv-section">
+                        <h3 className="cv-title">Expérience professionnelle</h3>
+                        {cvData.experiences.map((experience, idx) => (
                             <div key={idx}>
+                                <h4>{experience.poste}</h4>
                                 <p>
-                                    <img
-                                        src={skill.logo}
-                                        alt={skill.nom}
-                                        width={16}
-                                    />{" "}
-                                    {skill.nom}
+                                    <em>{experience.etablissement}</em>
                                 </p>
+                                <p>{experience.periode}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Diplômes */}
+                    <div className="cv-section">
+                        <h3 className="cv-title">Diplômes</h3>
+                        {cvData.trainings.diplomes.map((diplome, idx) => (
+                            <div key={idx}>
+                                <h4>{diplome.titre}</h4>
+                                <p>
+                                    <em>{diplome.etablissement}</em>
+                                </p>
+                                <p>{diplome.annee}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Formations professionnelles */}
+                    <div className="cv-section">
+                        <h3 className="cv-title">
+                            Formations professionnelles
+                        </h3>
+                        {cvData.trainings.formations.map((formation, idx) => (
+                            <div key={idx}>
+                                <h4>{formation.titre}</h4>
+                                <p>
+                                    <em>{formation.etablissement}</em>
+                                </p>
+                                <p>{formation.annee}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
-
-            {/* Main */}
-            <div id="cv-main">
-                {/* <p>{cvData.about.presentation}</p> */}
-
-                {/* Expérience professionnelle */}
-                <div className="cv-section">
-                    <h3 className="cv-title">Expérience professionnelle</h3>
-                    {cvData.experiences.map((experience, idx) => (
-                        <div key={idx}>
-                            <h4>{experience.poste}</h4>
-                            <p>
-                                <em>{experience.etablissement}</em>
-                            </p>
-                            <p>{experience.periode}</p>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Diplômes */}
-                <div className="cv-section">
-                    <h3 className="cv-title">Diplômes</h3>
-                    {cvData.trainings.diplomes.map((diplome, idx) => (
-                        <div key={idx}>
-                            <h4>{diplome.titre}</h4>
-                            <p>
-                                <em>{diplome.etablissement}</em>
-                            </p>
-                            <p>{diplome.annee}</p>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Formations professionnelles */}
-                <div className="cv-section">
-                    <h3 className="cv-title">Formations professionnelles</h3>
-                    {cvData.trainings.formations.map((formation, idx) => (
-                        <div key={idx}>
-                            <h4>{formation.titre}</h4>
-                            <p>
-                                <em>{formation.etablissement}</em>
-                            </p>
-                            <p>{formation.annee}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
+        </>
     ) : (
         ""
     );

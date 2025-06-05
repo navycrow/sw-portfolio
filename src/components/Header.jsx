@@ -59,6 +59,9 @@ function Header() {
                         <Link to="trainings">Etudes & Formations</Link>
                     </li>
                     <li>
+                        <Link to="/cv">CV</Link>
+                    </li>
+                    <li>
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>

@@ -25,7 +25,7 @@ const Skills = () => {
             </section>
 
             <section id="competences-web-design">
-                <h2>Compétences web-design</h2>
+                <h2>Compétences web design</h2>
                 <div className="container">
                     {skills?.webDesign?.map((el, idx) => (
                         <div key={idx} className="card">

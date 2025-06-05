@@ -34,7 +34,6 @@ function About() {
             <div id="a-propos-descriptif">
                 <p>{about.presentation}</p>
                 <SocialNetworks />
-                <CurriculumVitae/>
             </div>
         </section>
     );
