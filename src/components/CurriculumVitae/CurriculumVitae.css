@@ -28,13 +28,6 @@
         "cv-aside cv-main ";
 }
 
-#cv-header {
-    padding: 1em !important;
-    grid-area: cv-header !important;
-    background-color: #003d74;
-    color: white;
-}
-
 #cv div {
     padding: 0.3em;
 }
@@ -59,6 +52,21 @@
 
 #cv p {
     margin: 0;
+}
+
+#cv-header {
+    padding: 1em !important;
+    grid-area: cv-header !important;
+    background-color: #003d74;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cv-header div {
+    padding: 0;
 }
 
 #cv-aside {

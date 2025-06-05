@@ -50,10 +50,16 @@ const CurriculumVitae = () => {
             <div id="cv">
                 {/* Entete */}
                 <div id="cv-header">
+                    <div>
                     <h1>
                         {cvData.about.prenom} {cvData.about.nom}{" "}
                     </h1>
                     <p>{cvData.about.poste}</p>
+                    </div>
+
+                    <div>
+                        <img src={cvData.about.qrcode} alt="QR Code" width={64} height={64} />
+                    </div>
                 </div>
 
                 {/* Aside */}
