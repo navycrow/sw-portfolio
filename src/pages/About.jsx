@@ -17,7 +17,7 @@ function About() {
         <section id="a-propos">
             <h2>A propos de moi</h2>
 
-            <div>
+            <div id="a-propos-photo">
                 <img
                     src={about.photo}
                     alt={`${about.prenom} ${about.nom}`}
@@ -30,7 +30,8 @@ function About() {
                 </h3>
                 <h4>{about.poste}</h4>
             </div>
-            <div>
+
+            <div id="a-propos-descriptif">
                 <p>{about.presentation}</p>
                 <SocialNetworks />
                 <CurriculumVitae/>

@@ -37,9 +37,9 @@ const CurriculumVitae = () => {
     }, []);
 
     return cvData ? (
-        <div className="cv">
+        <div id="cv">
             {/* Entete */}
-            <div className="cv-header">
+            <div id="cv-header">
                 <h1>
                     {cvData.about.prenom} {cvData.about.nom}{" "}
                 </h1>
@@ -47,38 +47,46 @@ const CurriculumVitae = () => {
             </div>
 
             {/* Aside */}
-            <div className="cv-aside">
+            <div id="cv-aside">
                 {/* Photo */}
                 <img
                     src={cvData.about.photo}
                     alt={cvData.about.prenom}
                     width={150}
                     height={150}
-                    style={{ borderRadius: "50%" }}
+                    style={{ borderRadius: "50%", display: "block", margin: "auto", padding:"1em" }}
                 />
 
                 {/* Coordonnées */}
                 <div className="cv-section">
                     <h3 className="cv-title">Coordonnées</h3>
-                    <p>
-                        <strong>Email</strong>
-                    </p>
-                    <p>{cvData.about.email}</p>
+                    <div>
+                        <p>
+                            <strong>Email</strong>
+                        </p>
+                        <p>{cvData.about.email}</p>
+                    </div>
 
-                    <p>
-                        <strong>Téléphone</strong>
-                    </p>
-                    <p>{cvData.about.tel}</p>
+                    <div>
+                        <p>
+                            <strong>Téléphone</strong>
+                        </p>
+                        <p>{cvData.about.tel}</p>
+                    </div>
 
-                    <p>
-                        <strong>Site web</strong>
-                    </p>
-                    <p>{cvData.about.siteWeb}</p>
+                    <div>
+                        <p>
+                            <strong>Site web</strong>
+                        </p>
+                        <p>{cvData.about.siteWeb}</p>
+                    </div>
 
-                    <p>
-                        <strong>{cvData.socialNetworks[0].alt}</strong>
-                    </p>
-                    <p>{cvData.socialNetworks[0].href}</p>
+                    <div>
+                        <p>
+                            <strong>{cvData.socialNetworks[0].alt}</strong>
+                        </p>
+                        <p>{cvData.socialNetworks[0].href}</p>
+                    </div>
                 </div>
 
                 {/* Langues */}
@@ -104,44 +112,43 @@ const CurriculumVitae = () => {
                 {/* Compétences web */}
                 <div className="cv-section">
                     <h3 className="cv-title">Compétences</h3>
-
-                    <h4>Web</h4>
-                    {cvData.skills.web.map((skill, idx) => (
-                        <div key={idx}>
-                            <p>
-                                <strong>
+                    <div>
+                        <h4>Web</h4>
+                        {cvData.skills.web.map((skill, idx) => (
+                            <div key={idx}>
+                                <p>
                                     <img
                                         src={skill.logo}
                                         alt={skill.nom}
                                         width={16}
                                     />{" "}
                                     {skill.nom}
-                                </strong>
-                            </p>
-                        </div>
-                    ))}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
 
-                    <h4>Webdesign</h4>
-                    {cvData.skills.webDesign.map((skill, idx) => (
-                        <div key={idx}>
-                            <p>
-                                <strong>
+                    <div>
+                        <h4>Web design</h4>
+                        {cvData.skills.webDesign.map((skill, idx) => (
+                            <div key={idx}>
+                                <p>
                                     <img
                                         src={skill.logo}
                                         alt={skill.nom}
                                         width={16}
                                     />{" "}
                                     {skill.nom}
-                                </strong>
-                            </p>
-                        </div>
-                    ))}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 
             {/* Main */}
-            <div className="cv-main">
-                <p>{cvData.about.presentation}</p>
+            <div id="cv-main">
+                {/* <p>{cvData.about.presentation}</p> */}
 
                 {/* Expérience professionnelle */}
                 <div className="cv-section">
@@ -149,7 +156,9 @@ const CurriculumVitae = () => {
                     {cvData.experiences.map((experience, idx) => (
                         <div key={idx}>
                             <h4>{experience.poste}</h4>
-                            <p>{experience.etablissement}</p>
+                            <p>
+                                <em>{experience.etablissement}</em>
+                            </p>
                             <p>{experience.periode}</p>
                         </div>
                     ))}
@@ -161,7 +170,9 @@ const CurriculumVitae = () => {
                     {cvData.trainings.diplomes.map((diplome, idx) => (
                         <div key={idx}>
                             <h4>{diplome.titre}</h4>
-                            <p>{diplome.etablissement}</p>
+                            <p>
+                                <em>{diplome.etablissement}</em>
+                            </p>
                             <p>{diplome.annee}</p>
                         </div>
                     ))}
@@ -173,7 +184,9 @@ const CurriculumVitae = () => {
                     {cvData.trainings.formations.map((formation, idx) => (
                         <div key={idx}>
                             <h4>{formation.titre}</h4>
-                            <p>{formation.etablissement}</p>
+                            <p>
+                                <em>{formation.etablissement}</em>
+                            </p>
                             <p>{formation.annee}</p>
                         </div>
                     ))}

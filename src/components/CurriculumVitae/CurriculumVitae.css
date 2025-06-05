@@ -1,38 +1,91 @@
-.cv {
+#cv {
     background-color: white;
     color: black;
-    margin: 0 !important;
+    margin: auto !important;
     padding: 0 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11.5pt;
+    width: 21cm;
+    min-height: 29.7cm;
 
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas: 
-    "cv-header cv-header"
-    "cv-main cv-aside";
+    grid-template-columns: 1fr 6cm;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "cv-header cv-header"
+        "cv-main cv-aside";
+
 }
 
-.cv-header {
-    grid-area: cv-header;
+#cv-header {
+    padding: 1em !important;
+    grid-area: cv-header !important;
     background-color: #003d74;
     color: white;
 }
 
-.cv h1 {
+#cv div {
+    padding: 0.3em;
+}
+
+#cv h1 {
     margin: 0 !important;
     font-size: 2em;
 }
-.cv h3 {
+
+#cv h3 {
     margin: 0 !important;
     border-bottom: 1px solid #dfdfdf;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #003d74;
 }
 
-.cv-aside {
-    grid-area: cv-aside;
+#cv h4 {
+    margin: 0 !important;
+    font-size: 1.0em;
+}
+
+
+#cv p {
+    margin: 0;
+}
+
+#cv-aside {
+    grid-area: cv-aside !important;
     background-color: #f4f4f4;
 }
 
-.cv-main {
-    grid-area: cv-main;
+#cv-main {
+    grid-area: cv-main !important;
+}
+
+
+/* Impression */
+@media print {
+
+    /* Retire l'image d'arrière plan du site */
+    html,
+    body {
+        background: white !important;
+        background-image: none !important;
+        width:21cm;
+        height: 29.7cm;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    /* Retire le header et le footer */
+    header,
+    footer {
+        display: none !important;
+    }
+
+    /* Supprime les éléments inutiles à l'impression */
+    button,
+    nav,
+    .no-print {
+        display: none !important;
+    }
 }

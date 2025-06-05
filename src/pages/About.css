@@ -15,16 +15,11 @@
   padding: var(--padding-default);
 }
 
-#a-propos div:first-of-type {
+#a-propos-photo {
   grid-area: photo;
 }
 
-#a-propos .photo-profil {
-  /* width: 50%; */
-  /* aspect-ratio: 1/1; */
-}
-
-#a-propos div:last-of-type {
+#a-propos-descriptif{
   grid-area: descriptif;
   text-align: justify;
 }

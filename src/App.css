@@ -177,42 +177,62 @@ section h2 {
 
 /* Popup oerlay - placé juste derrière la popup card pour masquer le reste de l'écran */
 .popup-overlay {
-    /* On couvre la surface d'affichage */
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100vw;
-    height: 100vh;
+  /* On couvre la surface d'affichage */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 
-    z-index:998; /* juste derrière la popup */
-    background-color: rgba(128,128,128, 0.5); /* on opacifie l'arrière plan */
-    backdrop-filter: blur(2px);   /* flou */
+  z-index: 998;
+  /* juste derrière la popup */
+  background-color: rgba(128, 128, 128, 0.5);
+  /* on opacifie l'arrière plan */
+  backdrop-filter: blur(2px);
+  /* flou */
 }
 
 /* Popup card - Contenu */
 .popup-card {
-    /* Positionne la popup au centre de l'écran */
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  /* Positionne la popup au centre de l'écran */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    /* Place la popup au 1er plan */
-    z-index: 999;
+  /* Place la popup au 1er plan */
+  z-index: 999;
 
-    background-color: var(--menu-bg-color);
-    padding: var(--padding-default);
-    border-radius: 0.5em;
+  background-color: var(--menu-bg-color);
+  padding: var(--padding-default);
+  border-radius: 0.5em;
 
-    width: max-content;  /* ajuster au contenu dans la limite de la largeur max défini */
-    max-width: 80vw;
-    max-height: 90vh;
-    overflow: auto; /* gère le débordement */
+  width: max-content;
+  /* ajuster au contenu dans la limite de la largeur max défini */
+  max-width: 80vw;
+  max-height: 90vh;
+  overflow: auto;
+  /* gère le débordement */
 }
 
 /* Bouton de fermeture */
 .popup-close {
-    text-align: right;
-    margin: 0;
-    cursor: pointer;
+  text-align: right;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Impression */
+@media print {
+  /* Retire l'image d'arrière plan du site */
+  body {
+    background: white !important;
+    background-image: none !important;
+  }
+
+  /* Retire le header et le footer */
+  header,
+  footer {
+    display: none !important;
+  }
 }
