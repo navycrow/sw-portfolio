@@ -21,9 +21,9 @@ const Contact = () => {
             body: formData,
         })
             .then((response) => {
+                console.log(response);
                 if (response.ok) {
-                    console.log(response);
-                    setMsg("Formulaire envoyé avec succès");
+                    setMsg("Formulaire envoyé avec succès !");
                 } else {
                     setMsg(
                         `Erreur lors de l'envoi du formulaire : ${response.statusText}`
@@ -84,6 +84,7 @@ const Contact = () => {
                     </div>
 
                     {/* *** Option de formSubmit.co *** */}
+                    {/* Documentation : https://formsubmit.co/documentation */}
                     {/* Objet du mail */}
                     <input
                         type="hidden"
@@ -100,6 +101,9 @@ const Contact = () => {
                         name="_autoresponse"
                         value="Confirmation d'envoi de votre message"
                     ></input>
+
+                    {/* Template */}
+                    <input type="hidden" name="_template" value="table"></input>
 
                     {/* Bouton de validation avec texte dynamique */}
                     <button
