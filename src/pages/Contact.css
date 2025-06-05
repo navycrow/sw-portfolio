@@ -1,4 +1,4 @@
-#contact form {
+#contact form fieldset {
     display: grid;
     grid-template-areas:
     "nom"
@@ -6,7 +6,9 @@
     "email"
     "message"
     "submit";
-    gap: 1em
+    padding: var(--padding-default);
+    gap: 1em;
+    border-radius: 0.5em;
 }
 
 label {
@@ -56,8 +58,12 @@ textarea {
     border: none;
 }
 
+.asterisk {
+    font-size: 0.9em;
+}
+
 @media screen and (min-width: 400px) {
-    #contact form {
+    #contact form fieldset {
         grid-template-areas:
             "nom prenom"
             "email email"
@@ -67,7 +73,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-    #contact form {
+    #contact form fieldset {
         grid-template-areas:
             "nom prenom email"
             "message message message"
