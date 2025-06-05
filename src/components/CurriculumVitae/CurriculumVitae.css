@@ -3,11 +3,18 @@
     color: black;
     margin: 0 !important;
     padding: 0 !important;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "cv-header cv-header"
+    "cv-main cv-aside";
 }
 
 .cv-header {
+    grid-area: cv-header;
     background-color: #003d74;
-    color: white
+    color: white;
 }
 
 .cv h1 {
@@ -22,5 +29,10 @@
 }
 
 .cv-aside {
-    background-color: #f4f4f4
+    grid-area: cv-aside;
+    background-color: #f4f4f4;
+}
+
+.cv-main {
+    grid-area: cv-main;
 }

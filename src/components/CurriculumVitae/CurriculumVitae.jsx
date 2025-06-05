@@ -48,31 +48,104 @@ const CurriculumVitae = () => {
 
             {/* Aside */}
             <div className="cv-aside">
+                {/* Photo */}
                 <img
                     src={cvData.about.photo}
                     alt={cvData.about.prenom}
-                    width={100}
-                    height={100}
+                    width={150}
+                    height={150}
                     style={{ borderRadius: "50%" }}
                 />
-                <h3 className="cv-title">Coordonnées</h3>
-                <p><strong>Email</strong></p>
-                <p></p>
 
-                <p><strong>Téléphone</strong></p>
-                <p></p>
+                {/* Coordonnées */}
+                <div className="cv-section">
+                    <h3 className="cv-title">Coordonnées</h3>
+                    <p>
+                        <strong>Email</strong>
+                    </p>
+                    <p>{cvData.about.email}</p>
 
-                <p><strong>{cvData.socialNetworks[0].alt}</strong></p>
-                <p>{cvData.socialNetworks[0].href}</p>
+                    <p>
+                        <strong>Téléphone</strong>
+                    </p>
+                    <p>{cvData.about.tel}</p>
+
+                    <p>
+                        <strong>Site web</strong>
+                    </p>
+                    <p>{cvData.about.siteWeb}</p>
+
+                    <p>
+                        <strong>{cvData.socialNetworks[0].alt}</strong>
+                    </p>
+                    <p>{cvData.socialNetworks[0].href}</p>
+                </div>
+
+                {/* Langues */}
+                <div className="cv-section">
+                    <h3 className="cv-title">Langues</h3>
+                    {cvData.trainings.langues.map((langue, idx) => (
+                        <div key={idx}>
+                            <p>
+                                <strong>
+                                    <img
+                                        src={langue.flag}
+                                        alt={langue.langue}
+                                        width={16}
+                                    />{" "}
+                                    {langue.langue}
+                                </strong>
+                            </p>
+                            <p>{langue.niveau}</p>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Compétences web */}
+                <div className="cv-section">
+                    <h3 className="cv-title">Compétences</h3>
+
+                    <h4>Web</h4>
+                    {cvData.skills.web.map((skill, idx) => (
+                        <div key={idx}>
+                            <p>
+                                <strong>
+                                    <img
+                                        src={skill.logo}
+                                        alt={skill.nom}
+                                        width={16}
+                                    />{" "}
+                                    {skill.nom}
+                                </strong>
+                            </p>
+                        </div>
+                    ))}
+
+                    <h4>Webdesign</h4>
+                    {cvData.skills.webDesign.map((skill, idx) => (
+                        <div key={idx}>
+                            <p>
+                                <strong>
+                                    <img
+                                        src={skill.logo}
+                                        alt={skill.nom}
+                                        width={16}
+                                    />{" "}
+                                    {skill.nom}
+                                </strong>
+                            </p>
+                        </div>
+                    ))}
+                </div>
             </div>
 
             {/* Main */}
             <div className="cv-main">
                 <p>{cvData.about.presentation}</p>
 
-                {/* Expérience */}
+                {/* Expérience professionnelle */}
                 <div className="cv-section">
-                    <h3 className="cv-title">Expérience</h3>
+                    <h3 className="cv-title">Expérience professionnelle</h3>
                     {cvData.experiences.map((experience, idx) => (
                         <div key={idx}>
                             <h4>{experience.poste}</h4>
