@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./About.css";
 import SocialNetworks from "../components/SocialNetworks";
+import CurriculumVitae from "../components/CurriculumVitae/CurriculumVitae";
 
 function About() {
     const [about, setAbout] = useState({});
@@ -32,6 +33,7 @@ function About() {
             <div>
                 <p>{about.presentation}</p>
                 <SocialNetworks />
+                <CurriculumVitae/>
             </div>
         </section>
     );
