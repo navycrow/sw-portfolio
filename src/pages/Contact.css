@@ -45,8 +45,15 @@ textarea {
 
 #form-submit {
     grid-area: submit;
-    width: 7em;
+    padding:8px;
+    width: auto;
     margin: auto;
+}
+
+#form-submit:disabled {
+    background-color: transparent;
+    color: var(--body-txt-color);
+    border: none;
 }
 
 @media screen and (min-width: 400px) {
