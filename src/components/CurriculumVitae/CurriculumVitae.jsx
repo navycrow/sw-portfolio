@@ -41,13 +41,13 @@ const CurriculumVitae = () => {
             {/* Entete */}
             <div className="cv-header">
                 <h1>
-                    {cvData.about.prenom} {cvData.about.nom}
+                    {cvData.about.prenom} {cvData.about.nom}{" "}
                 </h1>
                 <p>{cvData.about.poste}</p>
             </div>
 
             {/* Aside */}
-            <div className="cv-aside" style={{ backgroundColor: "#f4f4f4" }}>
+            <div className="cv-aside">
                 <img
                     src={cvData.about.photo}
                     alt={cvData.about.prenom}
@@ -56,11 +56,13 @@ const CurriculumVitae = () => {
                     style={{ borderRadius: "50%" }}
                 />
                 <h3 className="cv-title">Coordonnées</h3>
-                <h4>Email</h4>
+                <p><strong>Email</strong></p>
                 <p></p>
-                <h4>Téléphone</h4>
+
+                <p><strong>Téléphone</strong></p>
                 <p></p>
-                <h4>{cvData.socialNetworks[0].alt}</h4>
+
+                <p><strong>{cvData.socialNetworks[0].alt}</strong></p>
                 <p>{cvData.socialNetworks[0].href}</p>
             </div>
 

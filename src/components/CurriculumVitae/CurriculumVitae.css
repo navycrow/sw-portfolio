@@ -1,7 +1,7 @@
 .cv {
     background-color: white;
     color: black;
-    margin:0 !important ;
+    margin: 0 !important;
     padding: 0 !important;
 }
 
@@ -11,6 +11,16 @@
 }
 
 .cv h1 {
-    margin:0 !important;
+    margin: 0 !important;
     font-size: 2em;
+}
+.cv h3 {
+    margin: 0 !important;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 1.5em;
+    color: #003d74;
+}
+
+.cv-aside {
+    background-color: #f4f4f4
 }
