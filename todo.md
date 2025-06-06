@@ -13,3 +13,5 @@
 - ajouter voir plus pour l'experience pro
 - remplacer les emojis du menu par des svg
 - contact mail et whatsapp
+- faire une frise chronologique pour les expériences, classement par année
+- faire un filtre pour les compétence et les réalisations
