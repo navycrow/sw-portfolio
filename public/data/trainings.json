@@ -18,6 +18,11 @@
     ],
     "formations": [
         {
+            "titre": "TP Développeur web / web mobile",
+            "etablissement": "AFEC, Bayonne",
+            "annee": "2025"
+        },
+        {
             "titre": "Initiation à la cybersécurité",
             "etablissement": "Vertego, Pau",
             "annee": "2022"
@@ -32,7 +37,7 @@
             "etablissement": "Etché Formation, Mauléon",
             "annee": "2021"
         },
-                {
+        {
             "titre": "Sketchup",
             "etablissement": "ATI, Anglet",
             "annee": "2012"

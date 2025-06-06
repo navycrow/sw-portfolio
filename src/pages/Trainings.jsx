@@ -14,7 +14,7 @@ const Trainings = () => {
     return (
         <>
             <section id="formations">
-                <h2>Formations</h2>
+                <h2>Formations professionnelles</h2>
                 <div className="container">
                     {trainings?.formations?.map((el, idx) => (
                         <div key={idx} className="card">

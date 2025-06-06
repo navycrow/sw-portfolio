@@ -2,37 +2,41 @@
     "web": [
         {
             "nom": "HTML",
-            "logo": "/img/html5.svg"
+            "logo": "/img/logos/html5.svg"
         },
         {
             "nom": "CSS",
-            "logo": "/img/css3.svg"
+            "logo": "/img/logos/css3.svg"
         },
         {
             "nom": "JavaScript",
-            "logo": "/img/javascript.svg"
+            "logo": "/img/logos/javascript.svg"
         },
         {
             "nom": "Bootstrap",
-            "logo": "/img/bootstrap.svg"
+            "logo": "/img/logos/bootstrap.svg"
         },
         {
             "nom": "React",
-            "logo": "/img/react.svg"
+            "logo": "/img/logos/react.svg"
         },
         {
             "nom": "Node.js",
-            "logo": "/img/node-js.svg"
+            "logo": "/img/logos/node-js.svg"
+        },
+                {
+            "nom": "Python",
+            "logo": "/img/logos/python.svg"
         },
         {
             "nom": "Git",
-            "logo": "/img/git.svg"
+            "logo": "/img/logos/git.svg"
         }
     ],
     "webDesign": [
         {
             "nom": "Figma",
-            "logo": "/img/figma.svg"
+            "logo": "/img/logos/figma.svg"
         }
     ],
     "autres": [

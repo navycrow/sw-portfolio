@@ -2,11 +2,11 @@
     {
         "alt": "LinkedIn",
         "href": "https://www.linkedin.com/in/herve-gonzalez/",
-        "src": "/img/linkedin.svg"
+        "src": "/img/logos/linkedin.svg"
     },
     {
         "alt": "Github",
         "href": "https://github.com/navycrow",
-        "src": "/img/github.svg"
+        "src": "/img/logos/github.svg"
     }
 ]
