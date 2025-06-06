@@ -15,3 +15,4 @@
 - contact mail et whatsapp
 - faire une frise chronologique pour les expériences, classement par année
 - faire un filtre pour les compétence et les réalisations
+- Optimiser le chargement des pages (affichage uniquement si la BDD est chargée)

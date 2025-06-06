@@ -51,14 +51,19 @@ const CurriculumVitae = () => {
                 {/* Entete */}
                 <div id="cv-header">
                     <div>
-                    <h1>
-                        {cvData.about.prenom} {cvData.about.nom}{" "}
-                    </h1>
-                    <p>{cvData.about.poste}</p>
+                        <h1>
+                            {cvData.about.prenom} {cvData.about.nom}{" "}
+                        </h1>
+                        <p>{cvData.about.poste}</p>
                     </div>
 
                     <div>
-                        <img src={cvData.about.qrcode} alt="QR Code" width={64} height={64} />
+                        <img
+                            src={cvData.about.qrcode}
+                            alt="QR Code"
+                            width={64}
+                            height={64}
+                        />
                     </div>
                 </div>
 
@@ -171,7 +176,13 @@ const CurriculumVitae = () => {
 
                 {/* Main */}
                 <div id="cv-main">
-                    {/* <p>{cvData.about.presentation}</p> */}
+                    {/* Présentation */}
+                    <div className="cv-section">
+                        <p style={{ textAlign: "justify" }}>
+                            {cvData.about.presentationCV}
+                        </p>
+                        <br />
+                    </div>
 
                     {/* Parcours professionnel */}
                     <div className="cv-section">
@@ -203,9 +214,7 @@ const CurriculumVitae = () => {
 
                     {/* Formations */}
                     <div className="cv-section">
-                        <h3 className="cv-title">
-                            Formations
-                        </h3>
+                        <h3 className="cv-title">Formations</h3>
                         {cvData.trainings.formations.map((formation, idx) => (
                             <div key={idx}>
                                 <h4>{formation.titre}</h4>
