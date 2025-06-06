@@ -173,9 +173,9 @@ const CurriculumVitae = () => {
                 <div id="cv-main">
                     {/* <p>{cvData.about.presentation}</p> */}
 
-                    {/* Expérience professionnelle */}
+                    {/* Parcours professionnel */}
                     <div className="cv-section">
-                        <h3 className="cv-title">Expérience professionnelle</h3>
+                        <h3 className="cv-title">Parcours professionnel</h3>
                         {cvData.experiences.map((experience, idx) => (
                             <div key={idx}>
                                 <h4>{experience.poste}</h4>
@@ -201,10 +201,10 @@ const CurriculumVitae = () => {
                         ))}
                     </div>
 
-                    {/* Formations professionnelles */}
+                    {/* Formations */}
                     <div className="cv-section">
                         <h3 className="cv-title">
-                            Formations professionnelles
+                            Formations
                         </h3>
                         {cvData.trainings.formations.map((formation, idx) => (
                             <div key={idx}>

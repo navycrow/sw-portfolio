@@ -14,7 +14,7 @@ const Experiences = () => {
 
     return (
         <section id="experiences">
-            <h2>Expériences professionnelles</h2>
+            <h2>Parcours professionnel</h2>
             <div className="container">
                 {experiences.map((experience, idx) => (
                     <div key={idx} className="card">
