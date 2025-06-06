@@ -52,7 +52,7 @@ function Header() {
                     </li>
                     <li>
                         <Link to="/experiences">
-                            Expériences professionnelles
+                            Parcours professionnel
                         </Link>
                     </li>
                     <li>
