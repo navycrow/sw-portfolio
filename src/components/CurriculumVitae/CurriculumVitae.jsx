@@ -57,13 +57,14 @@ const CurriculumVitae = () => {
                         <p>{cvData.about.poste}</p>
                     </div>
 
-                    <div>
+                    <div style={{textAlign:"center"}}>
                         <img
                             src={cvData.about.qrcode}
                             alt="QR Code"
                             width={64}
                             height={64}
                         />
+                        {/* <p>Scannez-moi</p> */}
                     </div>
                 </div>
 
