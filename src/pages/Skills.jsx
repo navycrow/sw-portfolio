@@ -16,12 +16,19 @@ const Skills = () => {
 
     return (
         <>
-            <SkillsSection skills={skills.frontEnd} title="Compétences web (front-end)" />
-            <SkillsSection skills={skills.backEnd} title="Compétences web (back-end)" />
+            <SkillsSection
+                skills={skills.frontEnd}
+                title="Front-end"
+            />
+            <SkillsSection
+                skills={skills.backEnd}
+                title="Back-end"
+            />
             <SkillsSection
                 skills={skills.UiUxDesign}
-                title="Compétences design UI/UX"
+                title="Design UI/UX"
             />
+            <SkillsSection skills={skills.DevTools} title="Dev Tools" />
         </>
     );
 };

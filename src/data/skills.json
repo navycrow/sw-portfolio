@@ -37,7 +37,7 @@
             "logo": "/img/logos/figma.svg"
         }
     ],
-    "dev":[
+    "DevTools":[
         {
             "nom": "Git",
             "logo": "/img/logos/git.svg"

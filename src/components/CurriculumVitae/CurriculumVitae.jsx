@@ -6,6 +6,7 @@ import skills from "../../data/skills.json";
 import socialNetworks from "../../data/socialNetworks.json";
 import trainings from "../../data/trainings.json";
 import works from "../../data/works.json";
+import CVSkills from "./CVSkills";
 
 const CurriculumVitae = () => {
     // const [cvData, setCvData] = useState(null);
@@ -157,53 +158,22 @@ const CurriculumVitae = () => {
                     {/* Compétences web */}
                     <div className="cv-section">
                         <h3 className="cv-title">Compétences</h3>
-                        <div>
-                            <h4>Front-end</h4>
-                            {cvData.skills.frontEnd.map((skill, idx) => (
-                                <div key={idx}>
-                                    <p>
-                                        <img
-                                            src={skill.logo}
-                                            alt={skill.nom}
-                                            width={16}
-                                        />{" "}
-                                        {skill.nom}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-
-                        <div>
-                            <h4>Back-end</h4>
-                            {cvData.skills.backEnd.map((skill, idx) => (
-                                <div key={idx}>
-                                    <p>
-                                        <img
-                                            src={skill.logo}
-                                            alt={skill.nom}
-                                            width={16}
-                                        />{" "}
-                                        {skill.nom}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-
-                        <div>
-                            <h4>Design UI/UX</h4>
-                            {cvData.skills.UiUxDesign.map((skill, idx) => (
-                                <div key={idx}>
-                                    <p>
-                                        <img
-                                            src={skill.logo}
-                                            alt={skill.nom}
-                                            width={16}
-                                        />{" "}
-                                        {skill.nom}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
+                        <CVSkills
+                            skills={cvData.skills.frontEnd}
+                            title="Front-end"
+                        />
+                        <CVSkills
+                            skills={cvData.skills.backEnd}
+                            title="Back-end"
+                        />
+                        <CVSkills
+                            skills={cvData.skills.UiUxDesign}
+                            title="Design UI/UX"
+                        />
+                        <CVSkills
+                            skills={cvData.skills.DevTools}
+                            title="Dev Tools"
+                        />
                     </div>
                 </div>
 
