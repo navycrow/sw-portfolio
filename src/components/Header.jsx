@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import DarkModeBtn from "./DarkMode/DarkModeBtn";
-import BurgerBtn from "./BurgerBtn";
+import DarkModeBtn from "./DarkModeBtn/DarkModeBtn";
+import BurgerBtn from "./BurgerBtn/BurgerBtn";
 import "./Header.css";
 
 function Header() {

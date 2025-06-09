@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./BurgerBtn.css"
+import burgerMenuSvg from "./burger-menu-right.svg";
+import closeSvg from "./close.svg";
 
 const BurgerBtn = () => {
     // Définit l'état du bouton, visible par défaut
@@ -8,7 +9,6 @@ const BurgerBtn = () => {
     // Définit l'état du menu, caché par défaut
     const [isMenuHidden, setMenuHidden] = useState(true);
 
-    
     // Au montage et en cas de redimensionnement de l'affichage, actualise l'état du bouton
     useEffect(() => {
         // Lors du redimensionnement, vérifie si le bouton burger est présent et actualise l'état
@@ -20,7 +20,7 @@ const BurgerBtn = () => {
         }
 
         // Actualise l'état initial du bouton
-        handleResize()
+        handleResize();
 
         // Ajout de l'écouteur au montage
         window.addEventListener("resize", handleResize);
@@ -28,7 +28,6 @@ const BurgerBtn = () => {
         // Suppresion de l'écouteur au démontage
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
 
     // Lorsque l'état d'affichage du bouton ou du menu change
     useEffect(() => {
@@ -46,13 +45,13 @@ const BurgerBtn = () => {
                 // Si le clic ne vient pas du bouton burger, cache le menu
                 function handleClick(e) {
                     if (e.target.id !== "burger-btn") setMenuHidden(true);
-                };
+                }
 
                 // Ajout d'un événement clic sur le document
                 document.addEventListener("click", handleClick);
 
                 // Supprime l'écouteur d'événement lors du démontage
-                return () => document.removeEventListener("click", handleClick)
+                return () => document.removeEventListener("click", handleClick);
             }
         }
 
@@ -62,15 +61,14 @@ const BurgerBtn = () => {
         }
     }, [isBtnVisible, isMenuHidden]);
 
-
     return (
-        <button
+        <img
             id="burger-btn"
-            className="icon"
-            onClick={() => setMenuHidden(!isMenuHidden)} // change l'état
-        >
-            {isMenuHidden ? "☰" : "x"}
-        </button>
+            src={isMenuHidden ? burgerMenuSvg : closeSvg}
+            className="icon svg"
+            alt={isMenuHidden ? "Ouvrir le menu" : "Fermer le menu"}
+            onClick={() => setMenuHidden((prev) => !prev)} // Inverse l'état
+        />
     );
 };
 

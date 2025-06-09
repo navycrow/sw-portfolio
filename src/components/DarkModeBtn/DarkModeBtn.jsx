@@ -25,18 +25,15 @@ const DarkModeBtn = () => {
     }, [isDarkMode]);
 
     return (
-        <button
+        <img
             id="dark-mode-btn"
+            src={isDarkMode ? darkModeSvg : lightModeSvg}
             className="icon svg"
-            aria-label={isDarkMode ? "Activer le mode clair" : "Activer le mode sombre"}
-            onClick={() => setDarkMode(prev => !prev)} // Inverse l'état
-        >
-            {isDarkMode ? (
-                <img src={darkModeSvg} className="icon svg" alt="Icône mode sombre" />
-            ) : (
-                <img src={lightModeSvg} className="icon svg" alt="Icône mode clair" />
-            )}
-        </button>
+            alt={
+                isDarkMode ? "Activer le mode clair" : "Activer le mode sombre"
+            }
+            onClick={() => setDarkMode((prev) => !prev)} // Inverse l'état
+        ></img>
     );
 };
 
