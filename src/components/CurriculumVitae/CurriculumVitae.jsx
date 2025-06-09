@@ -175,7 +175,7 @@ const CurriculumVitae = () => {
 
                         <div>
                             <h4>Back-end</h4>
-                            {cvData.skills.frontEnd.map((skill, idx) => (
+                            {cvData.skills.backEnd.map((skill, idx) => (
                                 <div key={idx}>
                                     <p>
                                         <img
@@ -190,8 +190,8 @@ const CurriculumVitae = () => {
                         </div>
 
                         <div>
-                            <h4>Web design</h4>
-                            {cvData.skills.webDesign.map((skill, idx) => (
+                            <h4>Design UI/UX</h4>
+                            {cvData.skills.UiUxDesign.map((skill, idx) => (
                                 <div key={idx}>
                                     <p>
                                         <img

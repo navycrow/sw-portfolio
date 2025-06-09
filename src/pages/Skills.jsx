@@ -19,8 +19,8 @@ const Skills = () => {
             <SkillsSection skills={skills.frontEnd} title="Compétences web (front-end)" />
             <SkillsSection skills={skills.backEnd} title="Compétences web (back-end)" />
             <SkillsSection
-                skills={skills.webDesign}
-                title="Compétences web design"
+                skills={skills.UiUxDesign}
+                title="Compétences design UI/UX"
             />
         </>
     );

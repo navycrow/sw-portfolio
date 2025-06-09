@@ -29,16 +29,18 @@
         {
             "nom": "Python",
             "logo": "/img/logos/python.svg"
-        },
-        {
-            "nom": "Git",
-            "logo": "/img/logos/git.svg"
         }
     ],
-    "webDesign": [
+    "UiUxDesign": [
         {
             "nom": "Figma",
             "logo": "/img/logos/figma.svg"
+        }
+    ],
+    "dev":[
+        {
+            "nom": "Git",
+            "logo": "/img/logos/git.svg"
         }
     ],
     "autres": [
