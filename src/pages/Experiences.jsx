@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
+import experiences from '../data/experiences.json'
 
 const Experiences = () => {
-    const [experiences, setExperiences] = useState([]);
+    // const [experiences, setExperiences] = useState([]);
     const [selectedItem, selectItem] = useState(-1); /* pour l'affichage de la popup : -1 = RIEN */
 
-    // Récupération des données
-    useEffect(() => {
-        fetch("/data/experiences.json")
-            .then((response) => response.json())
-            .then((data) => setExperiences(data))
-            .catch((err) => console.error("Erreur de chargement JSON :", err));
-    }, []);
+    // // Récupération des données
+    // useEffect(() => {
+    //     fetch("/data/experiences.json")
+    //         .then((response) => response.json())
+    //         .then((data) => setExperiences(data))
+    //         .catch((err) => console.error("Erreur de chargement JSON :", err));
+    // }, []);
 
     return (
         <section id="experiences">

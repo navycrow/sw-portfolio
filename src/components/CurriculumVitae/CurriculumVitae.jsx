@@ -1,40 +1,56 @@
 import { useState, useEffect } from "react";
 import "./CurriculumVitae.css";
+import about from "../../data/about.json";
+import experiences from "../../data/experiences.json";
+import skills from "../../data/skills.json";
+import socialNetworks from "../../data/socialNetworks.json";
+import trainings from "../../data/trainings.json";
+import works from "../../data/works.json";
 
 const CurriculumVitae = () => {
-    const [cvData, setCvData] = useState(null);
+    // const [cvData, setCvData] = useState(null);
+    const cvData = {
+        about: about,
+        experiences: experiences,
+        skills: skills,
+        socialNetworks: socialNetworks,
+        trainings: trainings,
+        works: works,
+    };
 
-    // Récupère les données
-    useEffect(() => {
-        Promise.all([
-            fetch("/data/about.json").then((response) => response.json()),
-            fetch("/data/experiences.json").then((response) => response.json()),
-            fetch("../../data/skills.json").then((response) => response.json()),
-            fetch("/data/socialNetworks.json").then((response) =>
-                response.json()
-            ),
-            fetch("/data/trainings.json").then((response) => response.json()),
-            fetch("/data/works.json").then((response) => response.json()),
-        ]).then(
-            ([
-                about,
-                experiences,
-                skills,
-                socialNetworks,
-                trainings,
-                works,
-            ]) => {
-                setCvData({
-                    about,
-                    experiences,
-                    skills,
-                    socialNetworks,
-                    trainings,
-                    works,
-                });
-            }
-        );
-    }, []);
+    console.log(cvData);
+
+    // // Récupère les données
+    // useEffect(() => {
+    //     Promise.all([
+    //         fetch("/data/about.json").then((response) => response.json()),
+    //         fetch("/data/experiences.json").then((response) => response.json()),
+    //         fetch("../../../data/skills.json").then((response) => response.json()),
+    //         fetch("/data/socialNetworks.json").then((response) =>
+    //             response.json()
+    //         ),
+    //         fetch("/data/trainings.json").then((response) => response.json()),
+    //         fetch("/data/works.json").then((response) => response.json()),
+    //     ]).then(
+    //         ([
+    //             about,
+    //             experiences,
+    //             skills,
+    //             socialNetworks,
+    //             trainings,
+    //             works,
+    //         ]) => {
+    //             setCvData({
+    //                 about,
+    //                 experiences,
+    //                 skills,
+    //                 socialNetworks,
+    //                 trainings,
+    //                 works,
+    //             });
+    //         }
+    //     );
+    // }, []);
 
     // Lance l'impression
     const handlePrint = () => {
@@ -57,7 +73,7 @@ const CurriculumVitae = () => {
                         <p>{cvData.about.poste}</p>
                     </div>
 
-                    <div style={{textAlign:"center"}}>
+                    <div style={{ textAlign: "center" }}>
                         <img
                             src={cvData.about.qrcode}
                             alt="QR Code"
@@ -142,8 +158,24 @@ const CurriculumVitae = () => {
                     <div className="cv-section">
                         <h3 className="cv-title">Compétences</h3>
                         <div>
-                            <h4>Web</h4>
-                            {cvData.skills.web.map((skill, idx) => (
+                            <h4>Front-end</h4>
+                            {cvData.skills.frontEnd.map((skill, idx) => (
+                                <div key={idx}>
+                                    <p>
+                                        <img
+                                            src={skill.logo}
+                                            alt={skill.nom}
+                                            width={16}
+                                        />{" "}
+                                        {skill.nom}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div>
+                            <h4>Back-end</h4>
+                            {cvData.skills.frontEnd.map((skill, idx) => (
                                 <div key={idx}>
                                     <p>
                                         <img

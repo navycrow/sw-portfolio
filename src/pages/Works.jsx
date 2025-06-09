@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
 import "./Works.css";
+import works from '../data/works.json'
 
 const Works = () => {
-    const [works, setTrainings] = useState([]);
+    // const [works, setTrainings] = useState([]);
 
-    useEffect(() => {
-        fetch("/data/works.json")
-            .then((response) => response.json())
-            .then((data) => setTrainings(data))
-            .catch((err) => console.error("Erreur de chargement JSON :", err));
-    }, []);
+    // useEffect(() => {
+    //     fetch("/data/works.json")
+    //         .then((response) => response.json())
+    //         .then((data) => setTrainings(data))
+    //         .catch((err) => console.error("Erreur de chargement JSON :", err));
+    // }, []);
 
     return (
         <>
