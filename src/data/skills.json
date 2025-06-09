@@ -29,6 +29,10 @@
         {
             "nom": "Python",
             "logo": "/img/logos/python.svg"
+        },
+        {
+            "nom": "SQL",
+            "logo": "/img/logos/sql.svg"
         }
     ],
     "UiUxDesign": [
@@ -37,7 +41,7 @@
             "logo": "/img/logos/figma.svg"
         }
     ],
-    "DevTools":[
+    "DevTools": [
         {
             "nom": "Git",
             "logo": "/img/logos/git.svg"
