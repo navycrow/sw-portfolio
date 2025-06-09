@@ -10,12 +10,11 @@
 - flex pour le formulaire
 - améliorer les performances
 - ajouter voir plus pour l'experience pro
-- remplacer les emojis du menu par des svg
 - contact mail et whatsapp
 - faire une frise chronologique pour les expériences, classement par année
 - faire un filtre pour les compétence et les réalisations
 - Optimiser le chargement des pages (affichage uniquement si la BDD est chargée)
 - faire le référencement google
-- séparer front end et back end
+- séparer front end et back end dans les compétences
 - faire une carte de visite comme card.pm
 - voir probleme animation à cause du fond d'écran ?
