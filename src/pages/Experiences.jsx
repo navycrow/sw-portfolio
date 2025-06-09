@@ -1,17 +1,9 @@
-import { useState, useEffect } from "react";
-import experiences from '../data/experiences.json'
+import { useState } from "react";
+import experiences from "../data/experiences.json";
 
 const Experiences = () => {
-    // const [experiences, setExperiences] = useState([]);
-    const [selectedItem, selectItem] = useState(-1); /* pour l'affichage de la popup : -1 = RIEN */
-
-    // // Récupération des données
-    // useEffect(() => {
-    //     fetch("/data/experiences.json")
-    //         .then((response) => response.json())
-    //         .then((data) => setExperiences(data))
-    //         .catch((err) => console.error("Erreur de chargement JSON :", err));
-    // }, []);
+    const [selectedItem, selectItem] =
+        useState(-1); /* pour l'affichage de la popup : -1 = RIEN */
 
     return (
         <section id="experiences">
@@ -24,7 +16,10 @@ const Experiences = () => {
                         <p>{experience.periode}</p>
 
                         {/* Affiche le détail lorsqu'on clique */}
-                        <p className="popup-call" onClick={() => selectItem(idx)}>
+                        <p
+                            className="popup-call"
+                            onClick={() => selectItem(idx)}
+                        >
                             En savoir plus...
                         </p>
                     </div>
@@ -36,7 +31,10 @@ const Experiences = () => {
                 <div className="popup">
                     <div className="popup-overlay"></div>
                     <div className="popup-card">
-                        <p className="popup-close" onClick={() => selectItem(-1)}>
+                        <p
+                            className="popup-close"
+                            onClick={() => selectItem(-1)}
+                        >
                             <strong>X</strong>
                         </p>
                         <h3>{experiences[selectedItem].poste}</h3>

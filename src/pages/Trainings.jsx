@@ -1,17 +1,7 @@
-import { useState, useEffect } from "react";
-import './Trainings.css'
-import trainings from '../data/trainings.json'
+import "./Trainings.css";
+import trainings from "../data/trainings.json";
 
 const Trainings = () => {
-    // const [trainings, setTrainings] = useState({});
-
-    // useEffect(() => {
-    //     fetch("/data/trainings.json")
-    //         .then((response) => response.json())
-    //         .then((data) => setTrainings(data))
-    //         .catch((err) => console.error("Erreur de chargement JSON :", err));
-    // }, []);
-
     return (
         <>
             <section id="formations">
@@ -44,7 +34,11 @@ const Trainings = () => {
                     {trainings?.langues?.map((el, idx) => (
                         <div key={idx} className="card">
                             <h3>{el.langue}</h3>
-                            <img className="flag" src={el.flag} alt={el.langue} />
+                            <img
+                                className="flag"
+                                src={el.flag}
+                                alt={el.langue}
+                            />
                             <p>{el.niveau}</p>
                         </div>
                     ))}

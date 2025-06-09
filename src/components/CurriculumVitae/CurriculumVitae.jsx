@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import "./CurriculumVitae.css";
 import about from "../../data/about.json";
 import experiences from "../../data/experiences.json";
@@ -9,7 +8,6 @@ import works from "../../data/works.json";
 import CVSkills from "./CVSkills";
 
 const CurriculumVitae = () => {
-    // const [cvData, setCvData] = useState(null);
     const cvData = {
         about: about,
         experiences: experiences,
@@ -19,39 +17,7 @@ const CurriculumVitae = () => {
         works: works,
     };
 
-    console.log(cvData);
-
-    // // Récupère les données
-    // useEffect(() => {
-    //     Promise.all([
-    //         fetch("/data/about.json").then((response) => response.json()),
-    //         fetch("/data/experiences.json").then((response) => response.json()),
-    //         fetch("../../../data/skills.json").then((response) => response.json()),
-    //         fetch("/data/socialNetworks.json").then((response) =>
-    //             response.json()
-    //         ),
-    //         fetch("/data/trainings.json").then((response) => response.json()),
-    //         fetch("/data/works.json").then((response) => response.json()),
-    //     ]).then(
-    //         ([
-    //             about,
-    //             experiences,
-    //             skills,
-    //             socialNetworks,
-    //             trainings,
-    //             works,
-    //         ]) => {
-    //             setCvData({
-    //                 about,
-    //                 experiences,
-    //                 skills,
-    //                 socialNetworks,
-    //                 trainings,
-    //                 works,
-    //             });
-    //         }
-    //     );
-    // }, []);
+    // console.log(cvData);
 
     // Lance l'impression
     const handlePrint = () => {
@@ -155,7 +121,7 @@ const CurriculumVitae = () => {
                         ))}
                     </div>
 
-                    {/* Compétences web */}
+                    {/* Compétences */}
                     <div className="cv-section">
                         <h3 className="cv-title">Compétences</h3>
                         <CVSkills
