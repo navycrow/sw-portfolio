@@ -9,7 +9,7 @@ const CurriculumVitae = () => {
         Promise.all([
             fetch("/data/about.json").then((response) => response.json()),
             fetch("/data/experiences.json").then((response) => response.json()),
-            fetch("/data/skills.json").then((response) => response.json()),
+            fetch("../../data/skills.json").then((response) => response.json()),
             fetch("/data/socialNetworks.json").then((response) =>
                 response.json()
             ),

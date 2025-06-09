@@ -1,5 +1,5 @@
 {
-    "web": [
+    "frontEnd": [
         {
             "nom": "HTML",
             "logo": "/img/logos/html5.svg"
@@ -19,12 +19,14 @@
         {
             "nom": "React",
             "logo": "/img/logos/react.svg"
-        },
+        }
+    ],
+    "backEnd": [
         {
             "nom": "Node.js",
             "logo": "/img/logos/node-js.svg"
         },
-                {
+        {
             "nom": "Python",
             "logo": "/img/logos/python.svg"
         },
