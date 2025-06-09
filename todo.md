@@ -16,3 +16,4 @@
 - faire le référencement google
 - faire une carte de visite comme card.pm
 - voir probleme animation à cause du fond d'écran ?
+- Créer un sitemaps pour Google

@@ -19,6 +19,10 @@
         {
             "nom": "React",
             "logo": "/img/logos/react.svg"
+        },
+        {
+            "nom": "WordPress",
+            "logo": "/img/logos/wordpress.svg"
         }
     ],
     "backEnd": [
@@ -56,7 +60,6 @@
         "Microsoft Access",
         "Sage Batigest",
         "Planning PME (Target Skills)",
-        "Python",
         "Cadwork",
         "Microsoft Windows 10 & 11",
         "Microsoft Windows Server 2012 R2",
