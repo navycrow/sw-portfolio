@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import darkModeSvg from "./dark-mode.svg";
+import lightModeSvg from "./light-mode.svg";
 
 const DarkModeBtn = () => {
     // Au montage, initialise le isDarkMode depuis le localStorage,
@@ -25,11 +27,15 @@ const DarkModeBtn = () => {
     return (
         <button
             id="dark-mode-btn"
-            className="icon"
-            aria-label="Mode sombre/clair"
-            onClick={() => setDarkMode(!isDarkMode)} // Inverse l'état
+            className="icon svg"
+            aria-label={isDarkMode ? "Activer le mode clair" : "Activer le mode sombre"}
+            onClick={() => setDarkMode(prev => !prev)} // Inverse l'état
         >
-            {isDarkMode ? "☀︎" : "⏾"}
+            {isDarkMode ? (
+                <img src={darkModeSvg} className="icon svg" alt="Icône mode sombre" />
+            ) : (
+                <img src={lightModeSvg} className="icon svg" alt="Icône mode clair" />
+            )}
         </button>
     );
 };

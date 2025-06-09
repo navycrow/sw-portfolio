@@ -18,3 +18,4 @@
 - faire le référencement google
 - séparer front end et back end
 - faire une carte de visite comme card.pm
+- voir probleme animation à cause du fond d'écran ?
