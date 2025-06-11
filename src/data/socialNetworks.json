@@ -8,5 +8,10 @@
         "alt": "Github",
         "href": "https://github.com/navycrow",
         "src": "/img/logos/github.svg"
+    },
+        {
+        "alt": "Malt",
+        "href": "https://www.malt.fr/profile/hervegonzalez1",
+        "src": "/img/logos/malt.svg"
     }
 ]
