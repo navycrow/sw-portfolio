@@ -42,7 +42,7 @@ function Header() {
                         <Link to="/skills">Mes compétences</Link>
                     </li>
                     <li>
-                        <Link to="/experiences">Parcours professionnel</Link>
+                        <Link to="/experiences">Expériences professionnelles</Link>
                     </li>
                     <li>
                         <Link to="trainings">Etudes & Formations</Link>

@@ -155,7 +155,7 @@ const CurriculumVitae = () => {
 
                     {/* Parcours professionnel */}
                     <div className="cv-section">
-                        <h3 className="cv-title">Parcours professionnel</h3>
+                        <h3 className="cv-title">Expériences professionnelles</h3>
                         {cvData.experiences.map((experience, idx) => (
                             <div key={idx}>
                                 <h4>{experience.poste}</h4>
