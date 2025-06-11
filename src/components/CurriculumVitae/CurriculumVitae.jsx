@@ -184,15 +184,17 @@ const CurriculumVitae = () => {
                     {/* Formations */}
                     <div className="cv-section">
                         <h3 className="cv-title">Formations</h3>
-                        {cvData.trainings.formations.map((formation, idx) => (
-                            <div key={idx}>
-                                <h4>{formation.titre}</h4>
-                                <p>
-                                    <em>{formation.etablissement}</em>
-                                </p>
-                                <p>{formation.annee}</p>
-                            </div>
-                        ))}
+                        {cvData.trainings.formations
+                            .filter((el) => el.visible)
+                            .map((formation, idx) => (
+                                <div key={idx}>
+                                    <h4>{formation.titre}</h4>
+                                    <p>
+                                        <em>{formation.etablissement}</em>
+                                    </p>
+                                    <p>{formation.annee}</p>
+                                </div>
+                            ))}
                     </div>
                 </div>
             </div>

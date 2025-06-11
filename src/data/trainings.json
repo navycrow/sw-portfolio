@@ -20,27 +20,32 @@
         {
             "titre": "TP Développeur web / web mobile",
             "etablissement": "AFEC, Bayonne",
-            "annee": "2025"
+            "annee": "2025",
+            "visible": true
         },
         {
             "titre": "Initiation à la cybersécurité",
             "etablissement": "Vertego, Pau",
-            "annee": "2022"
+            "annee": "2022",
+            "visible": true
         },
         {
             "titre": "Cadwork",
             "etablissement": "Cadwork France",
-            "annee": "2021"
+            "annee": "2021",
+            "visible": false
         },
         {
             "titre": "Python / Pyside",
             "etablissement": "Udemy",
-            "annee": "2019"
+            "annee": "2019",
+            "visible": true
         },
         {
             "titre": "Sketchup",
             "etablissement": "ATI, Anglet",
-            "annee": "2012"
+            "annee": "2012",
+            "visible": false
         }
     ],
     "langues": [
