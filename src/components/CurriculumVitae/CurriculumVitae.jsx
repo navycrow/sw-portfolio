@@ -134,11 +134,11 @@ const CurriculumVitae = () => {
                         />
                         <CVSkills
                             skills={cvData.skills.UiUxDesign}
-                            title="Design UI/UX"
+                            title="UI/UX Design"
                         />
                         <CVSkills
-                            skills={cvData.skills.DevTools}
-                            title="Dev Tools"
+                            skills={cvData.skills.tools}
+                            title="Gestion de projet & Collaboration"
                         />
                     </div>
                 </div>

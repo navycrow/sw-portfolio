@@ -45,10 +45,17 @@
             "logo": "/img/logos/figma.svg"
         }
     ],
-    "DevTools": [
+    "tools": [
         {
             "nom": "Git",
             "logo": "/img/logos/git.svg"
+        },
+        {
+            "nom": "Trello",
+            "logo": "/img/logos/trello.svg"
+        },        {
+            "nom": "MindMeister",
+            "logo": "/img/logos/mindmeister.svg"
         }
     ],
     "autres": [

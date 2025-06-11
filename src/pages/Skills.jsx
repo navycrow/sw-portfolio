@@ -4,19 +4,10 @@ import skills from "../data/skills.json";
 const Skills = () => {
     return (
         <>
-            <SkillsSection
-                skills={skills.frontEnd}
-                title="Front-end"
-            />
-            <SkillsSection
-                skills={skills.backEnd}
-                title="Back-end"
-            />
-            <SkillsSection
-                skills={skills.UiUxDesign}
-                title="Design UI/UX"
-            />
-            <SkillsSection skills={skills.DevTools} title="Dev Tools" />
+            <SkillsSection skills={skills.frontEnd} title="Front-end" />
+            <SkillsSection skills={skills.backEnd} title="Back-end" />
+            <SkillsSection skills={skills.UiUxDesign} title="UI/UX Design" />
+            <SkillsSection skills={skills.tools} title="Gestion de projet & Collaboration" />
         </>
     );
 };
