@@ -2,11 +2,13 @@
     {
         "alt": "LinkedIn",
         "href": "https://www.linkedin.com/in/herve-gonzalez/",
-        "src": "/img/logos/linkedin.svg"
+        "src": "/img/logos/linkedin.svg",
+        "visible": true
     },
     {
         "alt": "Malt",
         "href": "https://www.malt.fr/profile/hervegonzalez1",
-        "src": "/img/logos/malt.svg"
+        "src": "/img/logos/malt.svg",
+        "visible": false
     }
 ]

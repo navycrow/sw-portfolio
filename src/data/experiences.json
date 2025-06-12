@@ -9,7 +9,7 @@
             "Apprentissage des outils de référencement, démarchage auprès de partenaires.",
             "Apprentissage de la photographie en immobilier et des outils de création de visites virtuelles."
         ],
-        "competencesAcquises":[
+        "softSkills": [
             "Comprendre, analyser et formaliser les besoins d'un client",
             "Suivi de dossier",
             "Adaptation à des situations variées",
@@ -33,6 +33,13 @@
             "Réalisation d'outils d'analyse sous Microsoft Excel et Google Sheets.",
             "Utilisation des langages Powershell, VBA (Visual Basic for Application), AutoIt, Ruby, Python et Google Apps Script."
         ],
+        "softSkills": [
+            "Autonomie et sens des responsabilités",
+            "Rigueur",
+            "Esprit d'analyse",
+            "Gestion du stress",
+            "Communication technique"
+        ],
         "periode": "Sept. 1997 / Août. 2024",
         "visible": true
     },
@@ -45,6 +52,12 @@
             "Elaboration de plans d'éxécution pour les déclarations de travaux et la mise en oeuvre.",
             "Création de listes de débit et d'usinage.",
             "Exportation vers les machines à commande numérique."
+        ],
+        "softSkills": [
+            "Vision globale / Projection",
+            "Gestion des contraintes / Recherche de solutions",
+            "Travail en équipe",
+            "Patience et persévérance"
         ],
         "periode": "2008 / Août. 2024",
         "visible": true
@@ -59,6 +72,14 @@
             "Établissement de proposition commerciale sous Sage Batigest",
             "Réponse aux appels d'offres : analyse du dossier, préparation des pièces justificatives demandées."
         ],
+        "softSkills": [
+            "Analyse des besoins, écoute du client",
+            "Rigueur et précision",
+            "Gestion de projet",
+            "Esprit de synthèse",
+            "Négociation",
+            "Autonomie"
+        ],
         "periode": "Sept. 1997 / 2012",
         "visible": true
     },
@@ -72,6 +93,12 @@
             "Rédaction de devis.",
             "Soutien administratif (rédaction de courrier, aide à la tenue des comptes)."
         ],
+        "softSkills": [
+            "Organisation, gestion des priorités",
+            "Rigueur",
+            "Esprit d'initiative",
+            "Communication et relationnel"
+        ],
         "periode": "Sept. 1997 / 2007",
         "visible": true
     },
@@ -82,6 +109,12 @@
             "Construction d'un bassin de rétention enterré",
             "Travaux de maçonnerie dans une station d'épuration"
         ],
+        "softSkills": [
+            "Respect des délais",
+            "Respect des consignes",
+            "Sens de l'effort et de l'engagement",
+            "Travail en équipe"
+        ],
         "periode": "Mai. 1995 / Juil. 1995",
         "visible": false
     },
@@ -90,6 +123,12 @@
         "etablissement": "SOPREMA, Bordeaux",
         "fonctions": [
             "Remplacement d'étanchéité sur toitures terrasses d'immeubles"
+        ],
+        "softSkills": [
+            "Respect des délais",
+            "Respect des consignes",
+            "Sens de l'effort et de l'engagement",
+            "Travail en équipe"
         ],
         "periode": "Juil. 1993 / Août. 1993",
         "visible": false
