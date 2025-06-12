@@ -7,18 +7,29 @@ const Trainings = () => {
             <section id="formations">
                 <h2>Formations</h2>
                 <div className="container">
-                    {trainings.formations
-                        .filter((formation) => formation.visible)
-                        .map((formation, idx) => (
+                    {trainings?.formations
+                        ?.filter((el) => el.visible)
+                        .map((el, idx) => (
                             <div key={idx} className="card">
-                                <h3>{formation.titre}</h3>
-                                <p>{formation.etablissement}</p>
-                                <p>{formation.annee}</p>
+                                <h3>{el.titre}</h3>
+                                <p>{el.etablissement}</p>
+                                <p>{el.annee}</p>
                             </div>
                         ))}
                 </div>
             </section>
-
+            <section id="diplomes">
+                <h2>Diplômes</h2>
+                <div className="container">
+                    {trainings?.diplomes?.map((el, idx) => (
+                        <div key={idx} className="card">
+                            <h3>{el.titre}</h3>
+                            <p>{el.etablissement}</p>
+                            <p>{el.annee}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
             <section id="langues">
                 <h2>Langues</h2>
                 <div className="container">
