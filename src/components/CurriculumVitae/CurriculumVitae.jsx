@@ -153,18 +153,22 @@ const CurriculumVitae = () => {
                         <br />
                     </div>
 
-                    {/* Parcours professionnel */}
+                    {/* Expériences professionnelles */}
                     <div className="cv-section">
-                        <h3 className="cv-title">Expériences professionnelles</h3>
-                        {cvData.experiences.map((experience, idx) => (
-                            <div key={idx}>
-                                <h4>{experience.poste}</h4>
-                                <p>
-                                    <em>{experience.etablissement}</em>
-                                </p>
-                                <p>{experience.periode}</p>
-                            </div>
-                        ))}
+                        <h3 className="cv-title">
+                            Expériences professionnelles
+                        </h3>
+                        {cvData.experiences
+                            .filter((experience) => experience.visible)
+                            .map((experience, idx) => (
+                                <div key={idx}>
+                                    <h4>{experience.poste}</h4>
+                                    <p>
+                                        <em>{experience.etablissement}</em>
+                                    </p>
+                                    <p>{experience.periode}</p>
+                                </div>
+                            ))}
                     </div>
 
                     {/* Diplômes */}

@@ -9,21 +9,23 @@ const Experiences = () => {
         <section id="experiences">
             <h2>Expériences professionnelles</h2>
             <div className="container">
-                {experiences.map((experience, idx) => (
-                    <div key={idx} className="card">
-                        <h3>{experience.poste}</h3>
-                        <p>{experience.etablissement}</p>
-                        <p>{experience.periode}</p>
+                {experiences
+                    .filter((experience) => experience.visible)
+                    .map((experience, idx) => (
+                        <div key={idx} className="card">
+                            <h3>{experience.poste}</h3>
+                            <p>{experience.etablissement}</p>
+                            <p>{experience.periode}</p>
 
-                        {/* Affiche le détail lorsqu'on clique */}
-                        <p
-                            className="popup-call"
-                            onClick={() => selectItem(idx)}
-                        >
-                            En savoir plus...
-                        </p>
-                    </div>
-                ))}
+                            {/* Affiche le détail lorsqu'on clique */}
+                            <p
+                                className="popup-call"
+                                onClick={() => selectItem(idx)}
+                            >
+                                En savoir plus...
+                            </p>
+                        </div>
+                    ))}
             </div>
 
             {/* Popup pour le détail d'une carte */}

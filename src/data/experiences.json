@@ -9,7 +9,8 @@
             "Apprentissage des outils de référencement, démarchage auprès de partenaires.",
             "Apprentissage de la photographie en immobilier et des outils de création de visites virtuelles."
         ],
-        "periode": "Sept. 2024 / Janv. 2025"
+        "periode": "Sept. 2024 / Janv. 2025",
+        "visible": true
     },
     {
         "poste": "Administrateur systèmes et réseaux / Développeur d'applications",
@@ -25,7 +26,8 @@
             "Réalisation d'outils d'analyse sous Microsoft Excel et Google Sheets.",
             "Utilisation des langages Powershell, VBA (Visual Basic for Application), AutoIt, Ruby, Python et Google Apps Script."
         ],
-        "periode": "Sept. 1997 / Août. 2024"
+        "periode": "Sept. 1997 / Août. 2024",
+        "visible": true
     },
     {
         "poste": "Dessinateur / projeteur",
@@ -37,7 +39,8 @@
             "Création de listes de débit et d'usinage.",
             "Exportation vers les machines à commande numérique."
         ],
-        "periode": "2008 / Août. 2024"
+        "periode": "2008 / Août. 2024",
+        "visible": true
     },
     {
         "poste": "Chargé d'affaires / Métreur",
@@ -49,7 +52,8 @@
             "Établissement de proposition commerciale sous Sage Batigest",
             "Réponse aux appels d'offres : analyse du dossier, préparation des pièces justificatives demandées."
         ],
-        "periode": "Sept. 1997 / 2012"
+        "periode": "Sept. 1997 / 2012",
+        "visible": true
     },
     {
         "poste": "Assistant administratif polyvalent",
@@ -61,7 +65,8 @@
             "Rédaction de devis.",
             "Soutien administratif (rédaction de courrier, aide à la tenue des comptes)."
         ],
-        "periode": "Sept. 1997 / 2007"
+        "periode": "Sept. 1997 / 2007",
+        "visible": true
     },
     {
         "poste": "Ouvrier BTP (stage)",
@@ -70,7 +75,8 @@
             "Construction d'un bassin de rétention enterré",
             "Travaux de maçonnerie dans une station d'épuration"
         ],
-        "periode": "Mai. 1995 / Juil. 1995"
+        "periode": "Mai. 1995 / Juil. 1995",
+        "visible": false
     },
     {
         "poste": "Manœuvre bâtiment",
@@ -78,6 +84,7 @@
         "fonctions": [
             "Remplacement d'étanchéité sur toitures terrasses d'immeubles"
         ],
-        "periode": "Juil. 1993 / Août. 1993"
+        "periode": "Juil. 1993 / Août. 1993",
+        "visible": false
     }
 ]
