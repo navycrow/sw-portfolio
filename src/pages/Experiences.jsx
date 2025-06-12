@@ -1,59 +1,43 @@
-import { useState } from "react";
-import experiences from "../data/experiences.json";
-
 const Experiences = () => {
-    const [selectedItem, selectItem] =
-        useState(-1); /* pour l'affichage de la popup : -1 = RIEN */
-
     return (
         <section id="experiences">
             <h2>Expériences professionnelles</h2>
-            <div className="container">
-                {experiences
-                    .filter((experience) => experience.visible)
-                    .map((experience, idx) => (
-                        <div key={idx} className="card">
-                            <h3>{experience.poste}</h3>
-                            <p>{experience.etablissement}</p>
-                            <p>{experience.periode}</p>
-
-                            {/* Affiche le détail lorsqu'on clique */}
-                            <p
-                                className="popup-call"
-                                onClick={() => selectItem(idx)}
-                            >
-                                En savoir plus...
-                            </p>
-                        </div>
-                    ))}
-            </div>
-
-            {/* Popup pour le détail d'une carte */}
-            {selectedItem >= 0 ? (
-                <div className="popup">
-                    <div className="popup-overlay"></div>
-                    <div className="popup-card">
-                        <p
-                            className="popup-close"
-                            onClick={() => selectItem(-1)}
-                        >
-                            <strong>X</strong>
-                        </p>
-                        <h3>{experiences[selectedItem].poste}</h3>
-                        <p>{experiences[selectedItem].etablissement}</p>
-                        <ul>
-                            {experiences[selectedItem].fonctions.map(
-                                (fonction, i) => (
-                                    <li key={i}>{fonction}</li>
-                                )
-                            )}
-                        </ul>
-                        <p>{experiences[selectedItem].periode}</p>
-                    </div>
-                </div>
-            ) : (
-                <></>
-            )}
+            <p>
+                Avant de me tourner vers le développement web, j'ai exercé
+                pendant plusieurs années dans le secteur du bâtiment. Ce
+                parcours m’a permis de développer des compétences clés telles
+                que l'écoute, la gestion de projet, la rigueur, le respect des
+                délais, le travail collaboratif et l’autonomie — des qualités
+                que je mets aujourd’hui au service de mes projets numériques.
+            </p>
+            <p>
+                Par ailleurs, mes connaissance en informatique et en
+                programmation, acquise de manière autodidacte m'ont conduit
+                également à occuper le poste d'administrateur réseaux et
+                systèmes ainsi qu'à concevoir et développer des outils métiers
+                sur mesure, notamment autour de l'ERP{" "}
+                <a
+                    href="https://www.sage.com/fr-fr/produits/sage-batigest-i7/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Batigest
+                </a>{" "}
+                et de l'outil de planification{" "}
+                <a
+                    href="https://www.planningpme.fr/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    PlanningPME
+                </a>
+                .{" "}
+            </p>
+            <p>
+                Ma double compétence en développement web et dans le secteur du
+                bâtiment me permet de faire le lien entre les exigences
+                techniques et les besoins opérationnels du métier.
+            </p>
         </section>
     );
 };

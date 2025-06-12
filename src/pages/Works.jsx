@@ -7,8 +7,11 @@ const Works = () => {
             <section id="works">
                 <h2>Mes réalisations</h2>
                 <p>
-                    Ci-dessous, quelques exemples de réalisations effectuées
-                    notamment durant ma formation.
+                    Au fil de ma formation, j'ai eu l'occasion de concevoir et
+                    de développer plusieurs projets mettant en pratique les
+                    compétences acquises. Cette section présente quelques-unes
+                    de ces réalisations, illustrant ma progression et mon
+                    implication dans l'apprentissage des technologies web.
                 </p>
                 <div className="container">
                     {works.map((work, index) => (

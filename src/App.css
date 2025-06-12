@@ -58,8 +58,8 @@
 }
 
 .svg {
-  filter: var(--filter)
-    /* permet de changer la couleur suivant le mode clair/sombre */
+  filter: var(--filter);
+  /* permet de changer la couleur suivant le mode clair/sombre */
 }
 
 /* Photo ronde */
@@ -67,7 +67,17 @@
   border-radius: 50%;
 }
 
+/* Paragraphes */
+p {
+  text-align: justify;
+}
 
+/* Ancrage */
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--body-txt-color);
+}
 
 
 /* Body */
@@ -127,6 +137,7 @@ section {
 
   flex: 1 1 auto;
   /* utiliser tout l'espace disponible - taille proportionnelle */
+
 }
 
 .flex-auto {
@@ -139,13 +150,19 @@ section h2 {
   text-align: center;
 }
 
+/* Sous section */
+section.subsection {
+  box-shadow: none;
+}
+
+
 /* Container */
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 2em;
+  gap: var(--padding-default);
   text-align: center;
 }
 
@@ -156,7 +173,7 @@ section h2 {
 }
 
 
-/* ==== Popup ===== */
+/* ==== Popup affiché lorsque qu'on clique sur Voir Plus ===== */
 /* Popup call */
 .popup-call {
   color: var(--popup-call-color);
@@ -169,7 +186,7 @@ section h2 {
   scale: 1.2;
 }
 
-/* Popup oerlay - placé juste derrière la popup card pour masquer le reste de l'écran */
+/* Popup overlay - placé juste derrière la popup card pour masquer le reste de l'écran */
 .popup-overlay {
   /* On couvre la surface d'affichage */
   position: fixed;
@@ -218,6 +235,7 @@ section h2 {
 
 /* Impression */
 @media print {
+
   /* Retire l'image d'arrière plan du site */
   body {
     background: white !important;

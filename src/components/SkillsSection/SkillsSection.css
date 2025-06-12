@@ -1,0 +1,18 @@
+.skill.container {
+    flex-direction: column;
+    text-align: start;
+    gap: 0;
+}
+
+.skill.container h4 {
+    font-size: 1em;
+    margin: 0.5em;
+    display: flex;
+    gap:1em;
+    align-items: center;
+}
+
+.skill.container .logo {
+    width: 1.2em;
+    height: 1.2em;
+}

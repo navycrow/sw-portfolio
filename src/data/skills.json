@@ -47,13 +47,14 @@
     ],
     "tools": [
         {
-            "nom": "Git",
+            "nom": "Git / Github",
             "logo": "/img/logos/git.svg"
         },
         {
             "nom": "Trello",
             "logo": "/img/logos/trello.svg"
-        },        {
+        },
+        {
             "nom": "MindMeister",
             "logo": "/img/logos/mindmeister.svg"
         }
