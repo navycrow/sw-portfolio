@@ -1,5 +1,5 @@
 import "./About.css";
-import about from '../data/about.json'
+import about from "../data/about.json";
 import SocialNetworks from "../components/SocialNetworks";
 import CurriculumVitae from "../components/CurriculumVitae/CurriculumVitae";
 
@@ -23,7 +23,21 @@ function About() {
             </div>
 
             <div id="a-propos-descriptif">
-                <p>{about.presentation}</p>
+                {/* <p>{about.presentation}</p> */}
+                <h>
+                    Je suis <strong>Hervé GONZALEZ</strong>, développeur web en
+                    cours de formation, passionné par les technologies du web et
+                    le développement d’applications modernes. Rigoureux, curieux
+                    et motivé, je construis progressivement mes compétences en{" "}
+                    <strong> développement front-end et back-end</strong>, avec
+                    une attention particulière portée à la qualité du code, à
+                    l’expérience utilisateur et à l’adaptabilité des projets.
+                </h>
+                <p>
+                    Je suis à la recherche de projets, de stages ou de
+                    collaborations pour mettre en pratique mes compétences et
+                    continuer à progresser.
+                </p>
                 <SocialNetworks />
             </div>
         </section>
