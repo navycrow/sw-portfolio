@@ -8,7 +8,7 @@ import Trainings from "./pages/Trainings";
 import Experiences from "./pages/Experiences";
 import Contact from "./pages/Contact";
 import CurriculumVitae from "./components/CurriculumVitae/CurriculumVitae";
-import Background from "./pages/Background"
+import Background from "./pages/Background";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 
@@ -19,7 +19,7 @@ function App() {
                 <Header />
 
                 <main>
-                    <Routes>
+                    {/* <Routes>
                         <Route path="/" element={<About />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/skills" element={<Skills />} />
@@ -29,7 +29,13 @@ function App() {
                         <Route path="/background" element={<Background />} />
                         <Route path="/cv" element={<CurriculumVitae />} />
                         <Route path="/contact" element={<Contact />} />
-                    </Routes>
+                    </Routes> */}
+
+                    <About />
+                    <Works />
+                    <Experiences />
+                    <Skills />
+                    <Contact />
                 </main>
 
                 <Footer />

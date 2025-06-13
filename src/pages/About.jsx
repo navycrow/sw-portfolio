@@ -6,7 +6,7 @@ import CurriculumVitae from "../components/CurriculumVitae/CurriculumVitae";
 function About() {
     return (
         <section id="a-propos">
-            <h2>A propos de moi</h2>
+            <h2>Présentation</h2>
 
             <div id="a-propos-photo">
                 <img

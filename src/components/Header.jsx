@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import DarkModeBtn from "./DarkModeBtn/DarkModeBtn";
 import BurgerBtn from "./BurgerBtn/BurgerBtn";
 import "./Header.css";
@@ -7,7 +6,7 @@ import about from "../data/about.json";
 function Header() {
     return (
         <header>
-            <Link to="/">
+            <a href="/">
                 <img
                     id="photo"
                     src={about.photo}
@@ -16,7 +15,7 @@ function Header() {
                     alt={`${about.prenom} ${about.nom}`}
                     className="rounded-full"
                 />
-            </Link>
+            </a>
 
             <div id="titre">
                 <h1>{`${about.prenom} ${about.nom}`}</h1>
@@ -33,30 +32,28 @@ function Header() {
             <nav id="menu">
                 <ul>
                     <li>
-                        <Link to="/about">A propos de moi</Link>
+                        <a href="#a-propos">Présentation</a>
                     </li>
                     <li>
-                        <Link to="/works">Mes réalisations</Link>
+                        <a href="#works">Mes réalisations</a>
                     </li>
                     <li>
-                        <Link to="/skills">Mes compétences</Link>
+                        <a href="#experiences">Mon parcours</a>
                     </li>
                     <li>
-                        <Link to="/experiences">
-                            Expériences professionnelles
-                        </Link>
+                        <a href="#skills">Mes compétences</a>
+                    </li>
+                    {/* <li>
+                        <a href="trainings">Etudes & Formations</a>
                     </li>
                     <li>
-                        <Link to="trainings">Etudes & Formations</Link>
+                        <a href="background">Parcours et Compétences</a>
                     </li>
                     <li>
-                        <Link to="background">Parcours et Compétences</Link>
-                    </li>
+                        <a href="/cv">CV</a>
+                    </li> */}
                     <li>
-                        <Link to="/cv">CV</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>

@@ -43,6 +43,11 @@
   --popup-call-color: lightcoral
 }
 
+html {
+  scroll-padding-top: 120px;
+  /* permet de décaler la position verticale lors qu'on clique sur un lien # du menu */
+}
+
 
 /* Eléments cachés */
 .hidden {
@@ -89,6 +94,8 @@ body {
   font-family: var(--font-family);
 
   margin: var(--margin-default);
+
+
   /* padding: auto; */
 
 
@@ -111,7 +118,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 /* Main */
 main {

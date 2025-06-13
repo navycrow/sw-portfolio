@@ -1,7 +1,7 @@
 const Experiences = () => {
     return (
         <section id="experiences">
-            <h2>Expériences professionnelles</h2>
+            <h2>Mon parcours</h2>
             <p>
                 Avant de me tourner vers le développement web, j'ai exercé
                 pendant plusieurs années dans le secteur du bâtiment. Ce
