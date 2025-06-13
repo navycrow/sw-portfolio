@@ -3,7 +3,7 @@
   --font-family: 'Inter', 'Roboto', sans-serif;
 
   --margin-default: 0;
-  --padding-default: 1em;
+  --padding-default: 3vw;
 
   --body-bg: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 47, 148, 0.2)),
     url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash_3840_2160.webp');
@@ -11,7 +11,10 @@
 
   --section-bg: rgba(255, 255, 255, 0.5);
   --section-color: black;
+  --section-border-color: rgba(0, 47, 148, 0.2);
   --section-shadow-color: rgba(0, 0, 0, 0.5);
+
+  --subsection-bg: rgba(255, 255, 255, 0.5);
 
   --filter: invert(0%);
   /* couleur par défaut (noir) pour les svg */
@@ -30,10 +33,16 @@
   --header-bg: linear-gradient(90deg, #112240 0%, #1C1F26 100%);
 
   /* --section-bg-color: rgba(0, 0, 0, 0.5); */
-  --section-bg: linear-gradient(90deg, #112240 0%, #1C1F26 100%);
+  --section-bg: linear-gradient(135deg, #112240 0%, #1C1F26 100%);
   --section-color: #E6F1FF;
+  --section-border-color: rgba(230, 241, 255, 0.1);
+  /* léger trait clair */
   /* --section-shadow-color: rgba(255, 255, 255, 0.5); */
   /* --section-shadow-color: #112240; */
+
+  --subsection-bg: linear-gradient(135deg, #1C2E44 0%, #24364F 100%);
+  --subsection-border-color: rgba(230, 241, 255, 0.1);
+  /* léger trait clair */
 
   --filter: invert(100%);
   /* couleur inverse (blanc) pour les svg */
@@ -70,6 +79,11 @@ html {
   border-radius: 50%;
 }
 
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
 /* Paragraphes */
 p {
   text-align: justify;
@@ -92,20 +106,6 @@ body {
   font-family: var(--font-family);
 
   margin: var(--margin-default);
-
-
-  /* padding: auto; */
-
-
-
-  /* display: grid; */
-  /* justify-items: center; */
-  /* grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer"; */
-
 }
 
 /* Root de React */
@@ -121,12 +121,12 @@ body {
 main {
   grid-area: main;
 
-  padding: var(--padding-default);
+  padding: 1em var(--padding-default);
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: var(--padding-default);
 }
 
 /* Sections */
@@ -134,8 +134,10 @@ section {
   background: var(--section-bg);
   color: var(--section-color);
 
-  box-shadow: 15px 15px 15px var(--section-shadow-color);
   border-radius: 0.5em;
+  border-top: 1px solid var(--section-border-color);
+  border-left: 1px solid var(--section-border-color);
+  box-shadow: 15px 15px 15px var(--section-shadow-color);
 
   padding: var(--padding-default);
 
@@ -156,7 +158,11 @@ section h2 {
 
 /* Sous section */
 section.subsection {
-  box-shadow: none;
+  background: var(--subsection-bg);
+  /* border-top: 1px solid var(--subsection-border-color);
+  border-left: 1px solid var(--subsection-border-color); */
+  /* box-shadow: none; */
+
 }
 
 

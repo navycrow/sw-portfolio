@@ -57,8 +57,7 @@ const Contact = () => {
                 method="post"
                 onSubmit={submit} // Permet de traiter l'envoi par une fonction et éviter le changement de page
             >
-                <fieldset>
-                    <legend>Formulaire de contact</legend>
+
                     <div className="nom">
                         <label htmlFor="nom">Nom *</label>
                         <input type="text" id="nom" name="nom" required />
@@ -122,7 +121,7 @@ const Contact = () => {
                     </button>
 
                     <em className="asterisk">* Champs requis</em>
-                </fieldset>
+
             </form>
             <br />
             <SocialNetworks />

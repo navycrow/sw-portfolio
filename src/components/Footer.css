@@ -2,7 +2,7 @@
 footer {
   grid-area: footer;
 
-  padding: var(--padding-default);
+  padding: 1e var(--padding-default);
 }
 
 footer p {

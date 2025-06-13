@@ -1,18 +1,26 @@
-#contact form fieldset {
+#contact form {
+    background: var(--subsection-bg);
+
+    border-radius: 0.5em;
+    border-top: 1px solid var(--section-border-color);
+    border-left: 1px solid var(--section-border-color);
+    box-shadow: 15px 15px 15px var(--section-shadow-color);
+
+    padding: var(--padding-default);
+    gap: var(--padding-default);
+
     display: grid;
     grid-template-areas:
-    "nom"
-    "prenom"
-    "email"
-    "message"
-    "submit";
-    padding: var(--padding-default);
-    gap: 1em;
-    border-radius: 0.5em;
+        "nom"
+        "prenom"
+        "email"
+        "message"
+        "submit";
 }
 
 label {
-    display: block; /* saut à la ligne après l'étiquette */
+    display: block;
+    /* saut à la ligne après l'étiquette */
 }
 
 input,
@@ -47,7 +55,7 @@ textarea {
 
 #form-submit {
     grid-area: submit;
-    padding:8px;
+    padding: 8px;
     width: auto;
     margin: auto;
 }
@@ -73,7 +81,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-    #contact form fieldset {
+    #contact form {
         grid-template-areas:
             "nom prenom email"
             "message message message"

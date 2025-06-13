@@ -9,7 +9,7 @@ header {
 
     grid-area: header;
 
-    padding: var(--padding-default);
+    padding: 1em var(--padding-default);
 
     display: grid;
     grid-template-columns: auto 1fr auto;
