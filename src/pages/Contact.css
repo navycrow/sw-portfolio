@@ -53,6 +53,47 @@ textarea {
     height: 10em;
 }
 
+
+button {
+    background: var(--body-bg);
+    color: var(--section-color);
+
+  border-radius: 0.5em;
+  border: 1px solid var(--section-border-color);
+  /* border-left: 1px solid var(--section-border-color); */
+  box-shadow: 15px 15px 15px var(--section-shadow-color);
+
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+button:hover {
+    box-shadow: 0 6px 12px var(--section-shadow-color);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px var(--section-shadow-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #form-submit {
     grid-area: submit;
     padding: 8px;
@@ -71,7 +112,7 @@ textarea {
 }
 
 @media screen and (min-width: 400px) {
-    #contact form fieldset {
+    #contact form {
         grid-template-areas:
             "nom prenom"
             "email email"
