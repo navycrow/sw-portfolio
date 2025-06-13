@@ -3,7 +3,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--section-bg-color);
+    /* background: var(--body-bg); */
     backdrop-filter: blur(100px);
     /* flou */
 
@@ -114,6 +114,7 @@ h1 {
         right: auto;
 
         background-color: rgba(0, 0, 0, 0);
+        backdrop-filter: none;
         box-shadow: none;
 
         display: flex;

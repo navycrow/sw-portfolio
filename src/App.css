@@ -1,5 +1,6 @@
 :root {
-  --font-family: Arial;
+  /* --font-family: Arial; */
+  --font-family: 'Inter', 'Roboto', sans-serif;
 
   --margin-default: 0;
   --padding-default: 1em;
@@ -8,7 +9,7 @@
     url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash_3840_2160.webp');
   --body-txt-color: #323232;
 
-  --section-bg-color: rgba(255, 255, 255, 0.5);
+  --section-bg: rgba(255, 255, 255, 0.5);
   --section-color: black;
   --section-shadow-color: rgba(0, 0, 0, 0.5);
 
@@ -20,13 +21,19 @@
 
 /* Mode sombre */
 :root.dark {
-  --body-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 47, 148, 0.7)),
-    url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash_3840_2160.webp');
-  --body-txt-color: white;
+  /* --body-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 47, 148, 0.7)),
+    url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash_3840_2160.webp'); */
+  /* --body-txt-color: white; */
+  --body-bg: linear-gradient(135deg, #0A192F 0%, #112240 50%, #1C1F26 100%);
+  --body-txt-color: #E6F1FF;
 
-  --section-bg-color: rgba(0, 0, 0, 0.5);
-  --section-color: white;
-  --section-shadow-color: rgba(255, 255, 255, 0.5);
+  --header-bg: linear-gradient(90deg, #112240 0%, #1C1F26 100%);
+
+  /* --section-bg-color: rgba(0, 0, 0, 0.5); */
+  --section-bg: linear-gradient(90deg, #112240 0%, #1C1F26 100%);
+  --section-color: #E6F1FF;
+  /* --section-shadow-color: rgba(255, 255, 255, 0.5); */
+  /* --section-shadow-color: #112240; */
 
   --filter: invert(100%);
   /* couleur inverse (blanc) pour les svg */
@@ -124,7 +131,7 @@ main {
 
 /* Sections */
 section {
-  background-color: var(--section-bg-color);
+  background: var(--section-bg);
   color: var(--section-color);
 
   box-shadow: 15px 15px 15px var(--section-shadow-color);
