@@ -5,21 +5,33 @@
   --margin-default: 0;
   --padding-default: 3vw;
 
-  --body-bg: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 47, 148, 0.2)),
+  /* --body-bg: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 47, 148, 0.2)),
     url('/img/background/pawel-czerwinski-Slf8QxaFIWw-unsplash_3840_2160.webp');
-  --body-txt-color: #323232;
+  --body-txt-color: #323232; */
+  --body-bg: linear-gradient(135deg, #E3F2FD 0%, #DDE7F0 100%);
+  --body-txt-color: #1A1A1A;
+  /* Gris anthracite pour bon contraste */
 
-  --section-bg: rgba(255, 255, 255, 0.5);
-  --section-color: black;
+  --header-bg: linear-gradient(90deg, #FFFFFF 0%, #E3F2FD 100%);
+  /* Léger dégradé blanc vers bleu clair */
+
+  /* --section-bg: rgba(255, 255, 255, 0.5);
+  --section-color: black; */
+  --section-bg: linear-gradient(90deg, #FFFFFF 0%, #F5F9FC 100%);
+  --section-color: #1A1A1A;
+
   --section-border-color: rgba(0, 47, 148, 0.2);
   --section-shadow-color: rgba(0, 0, 0, 0.5);
 
-  --subsection-bg: rgba(255, 255, 255, 0.5);
+  /* --subsection-bg: rgba(255, 255, 255, 0.5); */
+  --subsection-bg: linear-gradient(180deg, #F0F7FA 0%, #E0ECF4 100%);
 
   --filter: invert(0%);
   /* couleur par défaut (noir) pour les svg */
 
-  --popup-call-color: red
+  /* --popup-call-color: red */
+  --popup-call-color: #2563EB;
+  /* Bleu professionnel */
 }
 
 /* Mode sombre */
@@ -80,7 +92,12 @@ html {
 }
 
 /* Titres */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
 }
 
