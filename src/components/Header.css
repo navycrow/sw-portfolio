@@ -63,11 +63,14 @@ h1 {
 /* Barre de navigation */
 #menu {
     position: absolute;
-    background-color: var(--menu-bg-color);
-    box-shadow: 15px 15px 15px var(--section-shadow-color);
-    top: calc(var(--header-height) + 1em);
+    top: 90px;
     right: 0;
     z-index: 1;
+
+    background-color: var(--section-bg-color);
+    backdrop-filter: blur(100px);
+
+    box-shadow: 15px 15px 15px var(--section-shadow-color);
 }
 
 #menu ul {
@@ -90,14 +93,13 @@ h1 {
 
 
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 950px) {
 
     /* Header */
     header {
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto auto 1fr auto;
         grid-template-areas:
-            "photo titre buttons"
-            "menu menu menu";
+            "photo titre menu buttons";
     }
 
     #burger-btn {
@@ -136,15 +138,5 @@ h1 {
     #menu a {
         text-decoration: none;
         color: var(--body-txt-color)
-    }
-}
-
-@media screen and (min-width: 1250px) {
-
-    /* Header */
-    header {
-        grid-template-columns: auto auto 1fr auto;
-        grid-template-areas:
-            "photo titre menu buttons";
     }
 }
