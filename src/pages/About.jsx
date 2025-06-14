@@ -16,36 +16,30 @@ function About() {
                     height="280"
                     className="rounded-full photo-profil"
                 />
-                {/* <h3>
-                    {about.prenom} {about.nom}
-                </h3>
-                <h4>{about.poste}</h4> */}
             </div>
 
             <div id="a-propos-descriptif">
-                {/* <p>{about.presentation}</p> */}
-
-                {/* Hello word animé */}
+                {/* Hello world animé */}
                 <h3 className="terminal">
                     {"<h3>Hello world !</h3>"} <span className="cursor"></span>
                 </h3>
 
                 {/* Présentation */}
                 <p>
-                    Je suis <strong>Hervé GONZALEZ</strong>, développeur web en
-                    cours de formation, passionné par les technologies du web et
-                    le développement d’applications modernes. Rigoureux, curieux
-                    et motivé, je construis progressivement mes compétences en{" "}
+                    Je suis <strong>Hervé GONZALEZ</strong>, développeur web à Bayonne,
+                    passionné par la création d'applications modernes et
+                    performantes. Rigoureux, curieux et motivé, je construis
+                    progressivement mes compétences en{" "}
                     <strong> développement front-end et back-end</strong>, avec
                     une attention particulière portée à la qualité du code, à
-                    l’expérience utilisateur et à l’adaptabilité des projets.
+                    l’expérience utilisateur et à l’adaptabilité des solutions.
                 </p>
                 <p>
-                    Je suis à la recherche de projets, de stages ou de
-                    collaborations pour mettre en pratique mes compétences et
+                    Actuellement en formation, je suis à la recherche de
+                    projets, de stages ou de collaborations pour mettre en
+                    pratique mes compétences, relever de nouveaux défis et
                     continuer à progresser.
                 </p>
-
             </div>
         </section>
     );
