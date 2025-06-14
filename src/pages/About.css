@@ -1,6 +1,7 @@
 #a-propos {
   display: grid;
   text-align: center;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "titre"
     "photo"
@@ -24,17 +25,20 @@
   text-align: justify;
 }
 
+
 /* Titre animé */
 .terminal {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 4em;
+  font-size: clamp(2.5em, 6vw, 4em);
+  /* s’adapte entre 1.5em et 2.5em selon la largeur de l’écran */
+
   white-space: nowrap;
   overflow: hidden;
   border-right: 1px solid;
 
   /* Curseur */
   width: 0;
-  animation: typing 5s steps(13) forwards, blink 1s step-end infinite;
+  animation: typing 5s steps(22) forwards, blink 1s step-end infinite;
 }
 
 .cursor {
@@ -47,7 +51,7 @@
   }
 
   to {
-    width: 13ch
+    width: 22ch
   }
 }
 
@@ -58,28 +62,9 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 820px) {
   #a-propos {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
       "titre titre"
       "photo descriptif";

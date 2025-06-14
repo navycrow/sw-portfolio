@@ -24,11 +24,11 @@ function About() {
 
             <div id="a-propos-descriptif">
                 {/* <p>{about.presentation}</p> */}
-                
+
                 {/* Hello word animé */}
-                <h1 className="terminal">
-                    Hello world ! <span className="cursor"></span>
-                </h1>
+                <h3 className="terminal">
+                    {'<h3>Hello world !</h3>'}  <span className="cursor"></span>
+                </h3>
 
                 {/* Présentation */}
                 <p>
