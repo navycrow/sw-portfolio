@@ -29,7 +29,7 @@
 /* Titre animé */
 .terminal {
   font-family: 'Courier New', Courier, monospace;
-  font-size: clamp(2.5em, 6vw, 4em);
+  font-size: clamp(1.5em, 3.5vw, 3em);
   /* s’adapte entre 1.5em et 2.5em selon la largeur de l’écran */
 
   white-space: nowrap;

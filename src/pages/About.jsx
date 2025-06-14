@@ -27,7 +27,7 @@ function About() {
 
                 {/* Hello word animé */}
                 <h3 className="terminal">
-                    {'<h3>Hello world !</h3>'}  <span className="cursor"></span>
+                    {"<h3>Hello world !</h3>"} <span className="cursor"></span>
                 </h3>
 
                 {/* Présentation */}
@@ -45,7 +45,7 @@ function About() {
                     collaborations pour mettre en pratique mes compétences et
                     continuer à progresser.
                 </p>
-                <SocialNetworks />
+
             </div>
         </section>
     );
