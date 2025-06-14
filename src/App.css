@@ -117,9 +117,9 @@ a {
 /* Body */
 body {
   background: var(--body-bg);
-  background-size: cover;
-
+  /* background-size: cover; */
   color: var(--body-txt-color);
+
   font-family: var(--font-family);
 
   margin: var(--margin-default);

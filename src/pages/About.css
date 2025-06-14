@@ -19,10 +19,63 @@
   grid-area: photo;
 }
 
-#a-propos-descriptif{
+#a-propos-descriptif {
   grid-area: descriptif;
   text-align: justify;
 }
+
+/* Titre animé */
+.terminal {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+
+  /* Curseur */
+  width: 0;
+  animation: typing 5s steps(13) forwards, blink 1s step-end infinite;
+}
+
+.cursor {
+  display: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 13ch
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 820px) {
   #a-propos {

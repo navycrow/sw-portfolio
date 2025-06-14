@@ -16,14 +16,21 @@ function About() {
                     height="280"
                     className="rounded-full photo-profil"
                 />
-                <h3>
+                {/* <h3>
                     {about.prenom} {about.nom}
                 </h3>
-                <h4>{about.poste}</h4>
+                <h4>{about.poste}</h4> */}
             </div>
 
             <div id="a-propos-descriptif">
                 {/* <p>{about.presentation}</p> */}
+                
+                {/* Hello word animé */}
+                <h1 class="terminal">
+                    Hello world ! <span class="cursor"></span>
+                </h1>
+
+                {/* Présentation */}
                 <h>
                     Je suis <strong>Hervé GONZALEZ</strong>, développeur web en
                     cours de formation, passionné par les technologies du web et
