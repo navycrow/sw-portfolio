@@ -26,12 +26,12 @@ function About() {
                 {/* <p>{about.presentation}</p> */}
                 
                 {/* Hello word animé */}
-                <h1 class="terminal">
-                    Hello world ! <span class="cursor"></span>
+                <h1 className="terminal">
+                    Hello world ! <span className="cursor"></span>
                 </h1>
 
                 {/* Présentation */}
-                <h>
+                <p>
                     Je suis <strong>Hervé GONZALEZ</strong>, développeur web en
                     cours de formation, passionné par les technologies du web et
                     le développement d’applications modernes. Rigoureux, curieux
@@ -39,7 +39,7 @@ function About() {
                     <strong> développement front-end et back-end</strong>, avec
                     une attention particulière portée à la qualité du code, à
                     l’expérience utilisateur et à l’adaptabilité des projets.
-                </h>
+                </p>
                 <p>
                     Je suis à la recherche de projets, de stages ou de
                     collaborations pour mettre en pratique mes compétences et
